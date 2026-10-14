@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Brain–Genome Atlas</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
   --accent: #7cc4ff; --accent-ink: #04121f; --accent-soft: rgba(124,196,255,.14);
   --good: #6fdca4; --bad: #ff8a80;
   --t-gene: #6ea8ff; --t-protein: #5ad6a0; --t-transmitter: #ffc857; --t-pathway: #c39bff; --t-cell: #ff9479;
-  --t-region: #ff7eb6; --t-function: #f1e2b0; --t-organelle: #8fd3e6; --t-concept: #a9b8c9;
+  --t-region: #ff7eb6; --t-function: #f1e2b0; --t-organelle: #8fd3e6; --t-concept: #a9b8c9; --t-ability: #f2a7d8;
   --tx-glu: #ffb14a; --tx-gaba: #7aa2ff; --tx-da: #ff6fcf; --tx-pep: #9ff0c8;
   --f-display: "Instrument Serif", "Iowan Old Style", Georgia, serif;
   --f-body: "Hanken Grotesk", "Segoe UI", system-ui, sans-serif;
@@ -24,11 +24,11 @@
 :root[data-preset="minimal"] { --void:#0a0a0b; --void-2:#121214; --panel:rgba(18,18,20,.88); --panel-solid:#141416; --panel-2:rgba(30,30,34,.8); --line:rgba(255,255,255,.1); --line-strong:rgba(255,255,255,.24); --accent:#e8e8e8; --accent-ink:#0a0a0b; --accent-soft:rgba(255,255,255,.1); --grid:rgba(255,255,255,.035); }
 :root[data-preset="futuristic"] { --void:#03030c; --void-2:#0a0820; --panel:rgba(10,8,30,.78); --panel-solid:#0d0b26; --panel-2:rgba(30,20,70,.55); --line:rgba(120,240,255,.2); --line-strong:rgba(120,240,255,.45); --accent:#4ff0ff; --accent-ink:#020214; --accent-soft:rgba(79,240,255,.14); --muted:#9aa4d6; --grid:rgba(79,240,255,.07); }
 :root[data-preset="medical"] { --void:#e9eef2; --void-2:#dfe6ec; --panel:rgba(255,255,255,.9); --panel-solid:#ffffff; --panel-2:rgba(232,239,245,.9); --line:rgba(20,50,80,.14); --line-strong:rgba(20,50,80,.3); --fg:#13222f; --muted:#506273; --faint:#8296a8; --accent:#0a6fc2; --accent-ink:#ffffff; --accent-soft:rgba(10,111,194,.1); --grid:rgba(20,60,100,.06);
-  --t-gene:#2a63d4; --t-protein:#13985f; --t-transmitter:#b07a00; --t-pathway:#7a4bd1; --t-cell:#d1532f; --t-region:#c2387a; --t-function:#7a6420; --t-organelle:#1d8299; --t-concept:#5a6b7e; --good:#13985f; --bad:#c9372c; color-scheme: light; }
+  --t-gene:#2a63d4; --t-protein:#13985f; --t-transmitter:#b07a00; --t-pathway:#7a4bd1; --t-cell:#d1532f; --t-region:#c2387a; --t-function:#7a6420; --t-organelle:#1d8299; --t-concept:#5a6b7e; --t-ability:#b8338f; --good:#13985f; --bad:#c9372c; color-scheme: light; }
 :root[data-preset="academic"] { --void:#f3f4f6; --void-2:#e8eaee; --panel:rgba(252,252,253,.94); --panel-solid:#fcfcfd; --panel-2:rgba(236,238,243,.9); --line:rgba(25,30,60,.14); --line-strong:rgba(25,30,60,.32); --fg:#1a1d2e; --muted:#545a74; --faint:#8a90a8; --accent:#2b3a8f; --accent-ink:#ffffff; --accent-soft:rgba(43,58,143,.09); --grid:rgba(25,30,60,.05);
-  --t-gene:#2b4fc4; --t-protein:#16805a; --t-transmitter:#9a6b00; --t-pathway:#6b3fc0; --t-cell:#c0492b; --t-region:#b0306e; --t-function:#6e5a1a; --t-organelle:#19798f; --t-concept:#555f72; --good:#16805a; --bad:#b8342a; color-scheme: light; }
+  --t-gene:#2b4fc4; --t-protein:#16805a; --t-transmitter:#9a6b00; --t-pathway:#6b3fc0; --t-cell:#c0492b; --t-region:#b0306e; --t-function:#6e5a1a; --t-organelle:#19798f; --t-concept:#555f72; --t-ability:#a52d82; --good:#16805a; --bad:#b8342a; color-scheme: light; }
 :root[data-preset="contrast"] { --void:#000; --void-2:#000; --panel:#000; --panel-solid:#000; --panel-2:#111; --line:#fff; --line-strong:#fff; --fg:#fff; --muted:#e6e6e6; --faint:#bdbdbd; --accent:#ffe600; --accent-ink:#000; --accent-soft:rgba(255,230,0,.2); --grid:transparent; --blur:0px;
-  --t-gene:#7fb2ff; --t-protein:#4dff9e; --t-transmitter:#ffe600; --t-pathway:#d9a6ff; --t-cell:#ffa07a; --t-region:#ff8fcf; --t-function:#fff; --t-organelle:#7ff0ff; --t-concept:#fff; }
+  --t-gene:#7fb2ff; --t-protein:#4dff9e; --t-transmitter:#ffe600; --t-pathway:#d9a6ff; --t-cell:#ffa07a; --t-region:#ff8fcf; --t-function:#fff; --t-organelle:#7ff0ff; --t-concept:#fff; --t-ability:#ffb3e6; }
 :root[data-density="compact"] { --pad: 10px; --gap: 7px; }
 :root[data-density="comfortable"] { --pad: 18px; --gap: 13px; }
 
@@ -89,7 +89,7 @@ kbd { font: 500 11px var(--f-mono); padding: 1px 6px; border-radius: 4px; border
 .chip[data-type="protein"] { --c: var(--t-protein); } .chip[data-type="transmitter"] { --c: var(--t-transmitter); }
 .chip[data-type="pathway"] { --c: var(--t-pathway); } .chip[data-type="cell"] { --c: var(--t-cell); }
 .chip[data-type="region"] { --c: var(--t-region); } .chip[data-type="function"] { --c: var(--t-function); }
-.chip[data-type="organelle"] { --c: var(--t-organelle); } .chip[data-type="concept"] { --c: var(--t-concept); }
+.chip[data-type="organelle"] { --c: var(--t-organelle); } .chip[data-type="ability"] { --c: var(--t-ability); } .chip[data-type="concept"] { --c: var(--t-concept); }
 .tdot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; }
 
 /* ---------- rail ---------- */
@@ -402,6 +402,132 @@ svg.schem { width: 100%; max-width: 680px; height: auto; display: block; margin:
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
 
+/* ---------- narrator bar (top bar) ---------- */
+#narrator { display: flex; align-items: center; gap: 2px; padding: 3px 4px 3px 10px; border-radius: 999px; flex: 0 1 auto; min-width: 0; max-width: 460px; border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); }
+#narrator .nr-ic { color: var(--accent); display: inline-grid; flex: none; }
+#narrator .nr-ic svg { width: 16px; height: 16px; animation: nrpulse 1.4s ease-in-out infinite; }
+#narrator.paused .nr-ic svg { animation: none; opacity: .5; }
+@keyframes nrpulse { 50% { opacity: .45; } }
+#narrator .nr-label { font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; margin: 0 6px; }
+#narrator .nr-pos { font-size: 11px; color: var(--muted); margin-right: 4px; flex: none; }
+#narrator .nr-b { border: 0; background: transparent; color: var(--fg); width: 30px; height: 30px; border-radius: 50%; display: inline-grid; place-items: center; flex: none; }
+#narrator .nr-b:hover { background: var(--accent-soft); }
+#narrator .nr-pp { background: var(--accent); color: var(--accent-ink); }
+#narrator .nr-pp:hover { background: var(--accent); filter: brightness(1.1); }
+#narrator .nr-b svg { width: 15px; height: 15px; }
+#tray { flex: 1; }
+
+/* ---------- small read / narrate buttons ---------- */
+.minibtn { display: inline-flex; align-items: center; gap: 5px; border: 1px solid var(--line); background: transparent; color: var(--muted); border-radius: 999px; padding: 3px 9px 3px 7px; font-size: 11.5px; white-space: nowrap; }
+.minibtn:hover { color: var(--accent); border-color: var(--accent); }
+.minibtn svg { width: 13px; height: 13px; }
+.readsec { float: right; margin: 0 0 6px 10px; }
+.caprow { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-top: 6px; flex-wrap: wrap; }
+.caprow .chiprow { margin: 0; }
+.capbtns { display: inline-flex; gap: 5px; flex-wrap: wrap; }
+.narrtag { font: 500 9.5px var(--f-mono); letter-spacing: .08em; color: var(--accent-ink); background: var(--accent); padding: 1px 6px; border-radius: 4px; margin-left: 4px; }
+.narrsel { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; color: var(--muted); border: 1px solid var(--line); border-radius: 8px; padding: 2px 4px 2px 7px; }
+.narrsel svg { width: 15px; height: 15px; }
+.narrsel.on { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 50%, var(--line)); }
+.narrsel select { border: 0 !important; padding: 2px; max-width: 170px; background: transparent; color: var(--fg); font-size: 12px; }
+.narrsel select option { background: var(--panel-solid); }
+#player .prog i.nar { box-shadow: 0 2px 0 -1px var(--accent); }
+
+/* ---------- abilities explorer ---------- */
+.cogwrap { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); }
+.cogmodel { overflow-y: auto; padding: 16px 18px 20px; border-right: 1px solid var(--line); min-width: 0; }
+.cogdetail { overflow-y: auto; padding: 16px 20px 24px; min-width: 0; position: relative; }
+.cogintro { color: var(--muted); font-size: 13px; margin: 0 0 14px; max-width: 68ch; }
+.cognote { color: var(--faint); font-size: 12px; margin: 14px 0 0; max-width: 68ch; }
+.chc { display: flex; flex-direction: column; gap: 22px; }
+.stratum { position: relative; display: flex; flex-direction: column; gap: 8px; }
+.stratum + .stratum::before { content: ""; position: absolute; left: 50%; top: -22px; height: 22px; border-left: 1px dashed var(--line-strong); }
+.slabel { font: 500 10px var(--f-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.gnode { align-self: center; display: flex; align-items: baseline; gap: 10px; border: 1px solid var(--line-strong); background: var(--panel-2); border-radius: 12px; padding: 8px 18px; color: var(--fg); }
+.gnode b { font: italic 400 28px/1 var(--f-display); }
+.gnode span { font-size: 13px; color: var(--muted); }
+.gnode[aria-pressed="true"], .gnode:hover { border-color: var(--accent); }
+.groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.grp { border: 1px solid var(--line); border-radius: 12px; padding: 10px; background: color-mix(in srgb, var(--panel-2) 60%, transparent); min-width: 0; }
+.grp h5 { margin: 0 0 8px; font: 500 10.5px var(--f-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: 6px; }
+.abtile { --gc: var(--t-gene); display: flex; flex-direction: column; align-items: flex-start; gap: 2px; text-align: left; border: 1px solid color-mix(in srgb, var(--gc) 35%, var(--line)); background: color-mix(in srgb, var(--gc) 8%, transparent); border-radius: 9px; padding: 7px 9px; color: var(--fg); min-width: 0; }
+.abtile b { font: 600 15px var(--f-mono); color: var(--gc); }
+.abtile span { font-size: 11.5px; line-height: 1.25; color: var(--fg); }
+.abtile:hover { background: color-mix(in srgb, var(--gc) 18%, transparent); }
+.abtile[aria-pressed="true"] { border-color: var(--gc); box-shadow: 0 0 0 1px var(--gc) inset, 0 0 18px color-mix(in srgb, var(--gc) 30%, transparent); }
+.g-control { --gc: var(--t-gene); } .g-speed { --gc: var(--t-transmitter); } .g-knowledge { --gc: var(--t-protein); } .g-sensory { --gc: var(--t-cell); } .g-wm { --gc: var(--t-pathway); }
+.narrow { display: flex; flex-wrap: wrap; gap: 5px; min-height: 28px; }
+.tag { display: inline-block; font-size: 12px; padding: 2px 9px; border-radius: 6px; border: 1px solid var(--line); background: var(--panel-2); color: var(--fg); }
+.ptag { font-size: 11.5px; }
+.muted { color: var(--muted); }
+/* working-memory diagram */
+.wmgrid { display: grid; grid-template-columns: 22px repeat(3, minmax(0, 1fr)); gap: 6px 10px; align-items: center; }
+.wmgrid .wmce, .wmgrid .wmrow { grid-column: 2 / 5; }
+.wmrow { display: grid; grid-template-columns: minmax(0, 1fr) 18px minmax(0, 1fr) 18px minmax(0, 1fr); align-items: stretch; gap: 4px; }
+.wmbox { --gc: var(--t-pathway); display: flex; flex-direction: column; gap: 3px; align-items: center; justify-content: center; text-align: center; border: 1px solid color-mix(in srgb, var(--gc) 45%, var(--line)); background: color-mix(in srgb, var(--gc) 9%, var(--panel-solid)); border-radius: 12px; padding: 12px 8px; color: var(--fg); min-height: 74px; width: 100%; min-width: 0; }
+.wmbox b { font: 400 18px/1.1 var(--f-display); }
+.wmbox span { font-size: 11px; color: var(--muted); }
+.wmbox.ce { min-height: 64px; }
+.wmbox:hover, .wmbox[aria-pressed="true"] { border-color: var(--gc); box-shadow: 0 0 0 1px var(--gc) inset; }
+.wmbox.ltm { --gc: var(--t-concept); background: repeating-linear-gradient(135deg, transparent 0 6px, color-mix(in srgb, var(--t-concept) 7%, transparent) 6px 12px), var(--panel-solid); min-height: 58px; }
+.wmbox.ltm b { font-size: 15px; }
+.harr { display: grid; place-items: center; color: var(--faint); font-size: 15px; }
+.wmarr { text-align: center; color: var(--faint); font-size: 16px; line-height: 1; }
+.wmarr.a1 { grid-column: 2; } .wmarr.a2 { grid-column: 3; } .wmarr.a3 { grid-column: 4; }
+.wmlab { writing-mode: vertical-rl; transform: rotate(180deg); font: 500 9.5px var(--f-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); text-align: center; grid-column: 1; }
+.wmlab.ltm { grid-row: 5; }
+.wmgrid .wmrow.ltm { grid-row: 5; }
+/* detail */
+.abh { display: flex; align-items: baseline; gap: 12px; margin: 6px 0 6px; font: 400 32px/1.05 var(--f-display); text-wrap: balance; }
+.abcode { --gc: var(--t-ability); font: 600 15px var(--f-mono); color: var(--gc); border: 1px solid var(--gc); border-radius: 7px; padding: 3px 8px; flex: none; align-self: center; }
+.abdef { font-size: 14.5px; margin: 0 0 12px; max-width: 64ch; }
+.abp { font-size: 13.5px; max-width: 66ch; margin: 0 0 10px; }
+.kv { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 10px; align-items: start; margin: 6px 0; font-size: 13px; }
+.kv > span { font: 500 10px var(--f-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); padding-top: 5px; }
+.kv p { margin: 3px 0 0; }
+.kv .chiprow { margin: 0; }
+.ch3 { margin: 20px 0 8px; font: 400 21px/1.1 var(--f-display); }
+.ch3 .muted { font: 400 13px var(--f-body); }
+.psteps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; position: relative; }
+.psteps li { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 10px; padding: 8px 8px 8px 4px; border-radius: 10px; border: 1px solid transparent; transition: background .25s, border-color .25s; position: relative; }
+.psteps li + li::before { content: ""; position: absolute; left: 17px; top: -6px; height: 12px; border-left: 1px solid var(--line-strong); }
+.psteps .pn { width: 26px; height: 26px; border-radius: 50%; border: 1px solid var(--line-strong); display: grid; place-items: center; font: 600 11.5px var(--f-mono); background: var(--panel-solid); }
+.psteps li.on { background: var(--accent-soft); border-color: color-mix(in srgb, var(--accent) 45%, transparent); }
+.psteps li.on .pn { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.psteps .pb b { font-size: 13.5px; }
+.psteps .pb p { margin: 2px 0 6px; font-size: 13px; color: var(--fg); max-width: 64ch; }
+.psteps .chiprow { margin: 0 0 4px; }
+.pbtns2 { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
+.walkbar { position: sticky; top: 0; z-index: 3; display: flex; align-items: center; gap: 6px; padding: 6px 8px; border-radius: 12px; margin: 10px 0 0; flex-wrap: wrap; }
+.walkbar .wpos { font-size: 12px; color: var(--muted); margin: 0 6px; }
+.walkbar .minibtn[data-cact="pp"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.stack { border: 1px solid var(--line); border-radius: 12px; padding: 6px 12px; background: var(--panel-2); }
+.srow2 { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 10px; align-items: start; padding: 7px 0; position: relative; }
+.srow2 + .srow2 { border-top: 1px dashed var(--line); }
+.srow2 .sl { font: 500 10px var(--f-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); padding-top: 5px; }
+.srow2 .sl::after { content: " ↓"; color: var(--faint); }
+.srow2:last-child .sl::after { content: ""; }
+.srow2 .chiprow { margin: 0; }
+.caution { margin-top: 14px; font-size: 12.5px; color: var(--muted); border-left: 2px solid var(--t-transmitter); padding: 6px 12px; background: color-mix(in srgb, var(--t-transmitter) 6%, transparent); max-width: 70ch; }
+.caution b { color: var(--fg); margin-right: 4px; }
+@media (max-width: 1100px) { .groups { grid-template-columns: 1fr; } .kv { grid-template-columns: 1fr; gap: 2px; } }
+@media (max-width: 760px) {
+  #narrator { position: fixed; left: 8px; right: 8px; top: calc(env(safe-area-inset-top, 0px) + 54px); max-width: none; z-index: 60; }
+  .cogwrap { grid-template-columns: 1fr; overflow-y: auto; display: block; }
+  .cogmodel, .cogdetail { overflow: visible; border-right: 0; padding: 12px; }
+  .cogmodel { border-bottom: 1px solid var(--line); }
+  .wmbox b { font-size: 14px; } .wmbox span { display: none; }
+  .srow2 { grid-template-columns: 1fr; gap: 2px; }
+  .abh { font-size: 26px; }
+  #player .caprow .capbtns { width: 100%; }
+}
+
+.l3d.gl3d::after { display: none; }
+.l3d.gl3d.gr { transform: translate(4px, -50%); }
+.l3d.gl3d.gl { transform: translate(calc(-100% - 4px), -50%); }
+.l3d.gl3d.sel { z-index: 2; }
+
 </style>
 <div id="app">
   <div id="bggrid"></div>
@@ -411,11 +537,13 @@ svg.schem { width: 100%; max-width: 680px; height: auto; display: block; margin:
   <header id="topbar">
     <div class="brand"><b>Brain–Genome Atlas</b><small>structure → mechanism → molecule</small></div>
     <div id="tray" aria-label="Minimized panels"></div>
+    <div id="narrator" class="glass" hidden role="group" aria-label="Narrator"></div>
     <button class="iconbtn" id="searchBtn" aria-label="Search the atlas"></button>
   </header>
   <nav id="rail" class="glass" aria-label="Explorers"></nav>
   <section id="viewSim" class="view-panel glass" hidden aria-label="Molecular explorer"></section>
   <section id="viewMap" class="view-panel glass" hidden aria-label="Relationship map"></section>
+  <section id="viewCog" class="view-panel glass" hidden aria-label="Abilities explorer"></section>
   <section id="viewStudy" class="view-panel glass" hidden aria-label="Study mode"></section>
   <div id="toast" class="glass" role="status"></div>
   <div id="loading">Building the brain…</div>
@@ -1333,6 +1461,671 @@ window.ATLAS = (function () {
 })();
 
 /* =========================================================================
+   ATLAS DATA, PART 2 — more genes across every chromosome, plus the cells,
+   signals, pathways and functions they connect to. Runs before core.js and
+   appends to window.ATLAS.entities.
+   ========================================================================= */
+(function () {
+  const A = window.ATLAS, E = A.entities;
+  const byId = (id) => E.find((e) => e.id === id);
+  const add = (id, type, name, o) => E.push(Object.assign({ id, type, name }, o || {}));
+  const link = (from, rel, to) => { const e = byId(from); (e.links = e.links || []).push([rel, to]); };
+
+  /* ---------------- transmitters ---------------- */
+  add("t_ne", "transmitter", "Noradrenaline", { aka: ["norepinephrine", "NE", "catecholamine"], color: "#8fe3ff",
+    short: "Neuromodulator for arousal, alertness and focused attention.",
+    what: "A catecholamine made from dopamine by dopamine β-hydroxylase inside vesicles. Nearly all of the brain's noradrenaline comes from the small locus coeruleus in the pons.",
+    does: "Raises arousal and the signal-to-noise ratio of cortical processing. Moderate levels, acting on α2A receptors, strengthen prefrontal working memory; high stress levels, acting on α1 and β receptors, weaken it.",
+    how: "Acts on α1 (Gq), α2 (Gi) and β (Gs) adrenergic receptors; cleared by the noradrenaline transporter (NET) and broken down by MAO-A and COMT.",
+    links: [["binds", "p_adra2a"], ["binds", "p_adrb1"]] });
+  add("t_5ht", "transmitter", "Serotonin", { aka: ["5-HT", "5-hydroxytryptamine"], color: "#c9a6ff",
+    short: "Neuromodulator for mood, impulse control and sensory gating.",
+    what: "An indoleamine made from tryptophan. Brain serotonin is made by raphe neurons in the brainstem, which project to almost the whole forebrain.",
+    does: "Regulates mood, patience and impulse control, sleep–wake state and pain; shapes cortical plasticity.",
+    how: "Acts on at least 14 receptor subtypes (all GPCRs except the 5-HT3 ion channel); cleared by the serotonin transporter (SERT), the target of SSRIs.",
+    links: [["binds", "p_htr2a"], ["binds", "p_htr1a"]] });
+  add("t_ach", "transmitter", "Acetylcholine", { aka: ["ACh", "cholinergic"], color: "#9ff0c8",
+    short: "Transmitter at muscles and a forebrain modulator of attention and encoding.",
+    what: "Made from choline and acetyl-CoA by choline acetyltransferase. In the brain it comes mainly from the basal forebrain (nucleus basalis, medial septum) and the pedunculopontine/laterodorsal tegmental nuclei of the brainstem.",
+    does: "Activates muscles at the neuromuscular junction. In cortex and hippocampus it boosts responses to attended inputs and favours encoding new memories.",
+    how: "Acts on nicotinic (ion channel) and muscarinic (GPCR) receptors; acetylcholinesterase breaks it down within milliseconds.",
+    links: [["binds", "p_chrna7"], ["binds", "p_chrna4"], ["binds", "p_chrm1"]] });
+
+  /* ---------------- cells ---------------- */
+  add("c_lc", "cell", "Locus coeruleus neuron", { aka: ["noradrenergic neuron", "LC"],
+    short: "Pontine neuron that supplies noradrenaline to the whole forebrain.",
+    what: "One of only ~20,000–50,000 noradrenergic neurons on each side of the human pons, each with very widely branching axons.",
+    does: "Fires tonically with arousal and in phasic bursts to salient events, resetting attention.",
+    how: "Tonic rate rises from sleep to waking; phasic bursts follow task-relevant stimuli (the adaptive-gain theory of Aston-Jones and Cohen).",
+    links: [["in_region", "brainstem"], ["releases", "t_ne"]] });
+  add("c_raphe", "cell", "Raphe serotonin neuron", { aka: ["serotonergic neuron", "dorsal raphe"],
+    short: "Brainstem neuron that releases serotonin across the brain.",
+    what: "Serotonergic neuron of the raphe nuclei along the midline of the brainstem.",
+    does: "Releases serotonin in cortex, hippocampus, striatum and amygdala; activity falls in sleep and is near silent in REM sleep.",
+    how: "Somatodendritic 5-HT1A autoreceptors provide negative feedback on firing.",
+    links: [["in_region", "brainstem"], ["releases", "t_5ht"]] });
+  add("c_chat", "cell", "Cholinergic projection neuron", { aka: ["basal forebrain neuron", "nucleus basalis", "pedunculopontine"],
+    short: "Neuron that broadcasts acetylcholine to cortex, hippocampus and thalamus.",
+    what: "Cholinergic neurons sit in the basal forebrain (nucleus basalis of Meynert, medial septum) and in the pedunculopontine and laterodorsal tegmental nuclei of the brainstem. This atlas does not model the basal forebrain separately, so these cells are linked to the brainstem group.",
+    does: "Raise cortical attention to relevant stimuli and support memory encoding; brainstem groups promote waking and REM sleep through the thalamus.",
+    how: "Basal forebrain cholinergic neurons degenerate early in Alzheimer's disease, the basis for cholinesterase-inhibitor drugs.",
+    links: [["in_region", "brainstem"], ["releases", "t_ach"]] });
+  add("c_orx", "cell", "Orexin neuron", { aka: ["hypocretin neuron", "lateral hypothalamus"],
+    short: "Lateral hypothalamic neuron that stabilises wakefulness.",
+    what: "About 50,000–80,000 neurons in the human lateral hypothalamus that make the orexin (hypocretin) peptides.",
+    does: "Excite the locus coeruleus, raphe, histamine and cholinergic arousal systems and keep waking consolidated.",
+    how: "Autoimmune-like loss of these neurons causes narcolepsy type 1.",
+    links: [["in_region", "hypothalamus"]] });
+
+  /* ---------------- pathways ---------------- */
+  add("pw_mtor", "pathway", "TrkB–PI3K–mTOR signaling", { aka: ["mTOR", "local protein synthesis", "PI3K", "AKT"],
+    short: "Growth-factor signaling that switches on protein synthesis at synapses.",
+    what: "A cascade from receptors such as TrkB through PI3K and AKT to mTOR complex 1.",
+    does: "Drives the local protein synthesis needed for late LTP and long-term memory, and controls neuron growth.",
+    how: "BDNF activates TrkB → PI3K makes PIP3 → AKT activates mTORC1 → mTORC1 phosphorylates 4E-BP and S6K, increasing translation. PTEN opposes the pathway; FMRP represses translation of many target mRNAs.",
+    links: [["drives", "f_episodic"]] });
+  add("pw_amyloid", "pathway", "APP processing (amyloid pathway)", { aka: ["amyloid", "Alzheimer", "gamma-secretase", "beta-amyloid"],
+    short: "Cleavage of APP into amyloid-β, the peptide that forms Alzheimer plaques.",
+    what: "Sequential cutting of amyloid precursor protein by β-secretase (BACE1) and γ-secretase (presenilin).",
+    does: "Produces amyloid-β peptides; the longer Aβ42 form aggregates into plaques in Alzheimer's disease. The alternative α-secretase route does not produce Aβ.",
+    how: "Genetic evidence links the pathway to Alzheimer's: APP duplication and trisomy 21, PSEN1/PSEN2 variants, and the APOE ε4 allele, which slows Aβ clearance.",
+    links: [["drives", "f_episodic"]] });
+  add("pw_cholinergic", "pathway", "Cholinergic modulation", { aka: ["acetylcholine signaling", "nicotinic", "muscarinic"],
+    short: "Acetylcholine release that sharpens attention and favours encoding.",
+    what: "Signaling by acetylcholine through nicotinic ion channels and muscarinic GPCRs.",
+    does: "Raises the gain of cortical responses to attended inputs and shifts the hippocampus toward encoding new information.",
+    how: "Nicotinic receptors (α7, α4β2) let Na⁺ and Ca²⁺ in within milliseconds; muscarinic M1 receptors act through Gq and close K⁺ channels, making neurons more excitable for seconds.",
+    links: [["drives", "f_attention"], ["drives", "f_episodic"]] });
+  add("pw_release", "pathway", "Synaptic vesicle release", { aka: ["exocytosis", "SNARE", "neurotransmitter release"],
+    short: "Ca²⁺-triggered fusion of transmitter-filled vesicles with the membrane.",
+    what: "The sequence by which a presynaptic spike becomes transmitter in the synaptic cleft.",
+    does: "Converts electrical signals into chemical ones, in under a millisecond at fast synapses.",
+    how: "Vesicles are filled by transporters such as VGLUT1, docked by SNARE proteins (SNAP-25, syntaxin-1, synaptobrevin), and fused when Ca²⁺ entering through voltage-gated channels binds synaptotagmin.",
+    links: [["drives", "f_attention"], ["drives", "f_motor"]] });
+  add("pw_hpa", "pathway", "HPA-axis stress signaling", { aka: ["stress", "cortisol", "glucocorticoid", "HPA axis"],
+    short: "Hypothalamus → pituitary → adrenal cascade that releases cortisol.",
+    what: "The hypothalamic–pituitary–adrenal axis.",
+    does: "Mobilises energy under stress and modulates memory: cortisol strengthens storage of emotional events but impairs retrieval and prefrontal working memory.",
+    how: "CRH from the paraventricular nucleus → ACTH from the pituitary → cortisol from the adrenal cortex → glucocorticoid and mineralocorticoid receptors in hippocampus, PFC and hypothalamus, which also switch the axis off (negative feedback).",
+    links: [["drives", "f_fear"], ["drives", "f_homeo"]] });
+
+  /* ---------------- functions ---------------- */
+  const F = (id, name, short, aka, regions) => { add(id, "function", name, { short, what: short, aka }); regions.forEach((r) => link(r, "supports", id)); };
+  F("f_attention", "Selective attention", "Prioritising some inputs and thoughts over others, and keeping that focus over time.", ["attention", "focus", "vigilance"], ["pfc", "parietal", "thalamus"]);
+  F("f_semantic", "Semantic memory", "General knowledge of words, objects and facts, independent of when it was learned.", ["knowledge", "meaning", "vocabulary"], ["temporal", "pfc"]);
+  F("f_number", "Numerical cognition", "Representing quantities and doing arithmetic.", ["math", "number sense", "arithmetic"], ["parietal", "pfc"]);
+  F("f_reading", "Reading & writing", "Mapping written symbols onto speech sounds and meaning, and producing them by hand.", ["literacy", "dyslexia", "visual word form area"], ["occipital", "temporal", "parietal"]);
+  F("f_audition", "Auditory perception", "Analysing pitch, timing and location of sounds.", ["hearing", "sound", "music"], ["temporal", "thalamus", "brainstem"]);
+  F("f_smell", "Smell", "Detecting and identifying odours; the only sense that reaches cortex without passing through the thalamus first.", ["olfaction", "odour"], ["temporal", "amygdala", "pfc"]);
+  link("pw_gaba", "drives", "f_attention");
+  link("pw_myelin", "drives", "f_attention");
+
+  /* ---------------- proteins + genes ----------------
+     [symbol, full name, chr, band, Mb (GRCh38, approx.), protein id, protein spec or null, gene note]
+     protein spec: [name, kind, location, short, what/does, how, links] */
+  const G = [
+    ["NRG1", "neuregulin 1", "8", "p12", 31.6, "p_nrg1", ["Neuregulin 1", "Growth factor", "o_membrane", "Signal that guides interneuron development and myelination.",
+      "A family of signaling proteins made in many isoforms; its receptor ErbB4 is highly expressed on PV interneurons.",
+      "Regulates the wiring of inhibitory circuits and the thickness of myelin in the peripheral nervous system.",
+      [["participates", "pw_myelin"], ["expressed_in", "c_pyr"]]], "Over 1 Mb long, with many promoters; reported as a schizophrenia candidate gene, though large genome-wide studies give it only weak support."],
+    ["ARC", "activity regulated cytoskeleton associated protein", "8", "q24.3", 142.6, "p_arc", ["Arc", "Immediate-early protein", "o_cyto", "Activity-induced protein needed for long-term memory.",
+      "Arc mRNA is made within minutes of strong synaptic activity and carried into dendrites, where it is translated near active synapses.",
+      "Promotes endocytosis of AMPA receptors, helping to rebalance synapses; Arc protein can also assemble into virus-like capsids that carry RNA between neurons.",
+      [["participates", "pw_creb"], ["participates", "pw_ltp"], ["expressed_in", "c_ca1"], ["expressed_in", "c_pyr"]]], "A short gene that is switched on within minutes of neuronal activity; widely used as a marker of recently active neurons."],
+    ["ADRA2A", "adrenoceptor alpha 2A", "10", "q25.2", 111.1, "p_adra2a", ["α2A adrenergic receptor", "GPCR", "o_membrane", "Gi-coupled receptor that strengthens prefrontal working memory.",
+      "A noradrenaline receptor found on dendritic spines of prefrontal pyramidal neurons and as an autoreceptor on locus coeruleus neurons.",
+      "Lowers cAMP, which closes HCN and KCNQ channels on spines and strengthens recurrent prefrontal networks (Arnsten). Guanfacine, an ADHD medication, stimulates it.",
+      [["participates", "pw_gi"], ["expressed_in", "c_pyr"], ["expressed_in", "c_lc"]]], "Intronless gene; the protein-coding sequence is a single exon."],
+    ["ADRB1", "adrenoceptor beta 1", "10", "q25.3", 114.0, "p_adrb1", ["β1 adrenergic receptor", "GPCR", "o_membrane", "Gs-coupled noradrenaline receptor that strengthens emotional memory.",
+      "A noradrenaline receptor in heart and brain, including the basolateral amygdala.",
+      "Raises cAMP; in the amygdala it enhances storage of emotionally arousing memories, an effect blocked by propranolol.",
+      [["participates", "pw_camp"], ["expressed_in", "c_bla"]]], "Intronless gene; a common Ser49Gly variant affects receptor desensitisation."],
+    ["PTEN", "phosphatase and tensin homolog", "10", "q23.31", 87.9, "p_pten", ["PTEN", "Phosphatase", "o_cyto", "Brake on PI3K–mTOR growth signaling.",
+      "A lipid phosphatase that removes a phosphate from PIP3.",
+      "Opposes PI3K–AKT–mTOR signaling, restraining neuron growth and protein synthesis. Germline loss-of-function variants are associated with large head size and autism.",
+      [["participates", "pw_mtor"], ["expressed_in", "c_pyr"]]], "Also a major tumour-suppressor gene."],
+    ["CHAT", "choline O-acetyltransferase", "10", "q11.23", 49.6, "p_chat", ["Choline acetyltransferase", "Enzyme", "o_cyto", "Enzyme that makes acetylcholine.",
+      "The defining enzyme of cholinergic neurons.",
+      "Transfers an acetyl group from acetyl-CoA to choline. The vesicular transporter gene SLC18A3 sits inside CHAT's first intron (the 'cholinergic gene locus').",
+      [["participates", "pw_cholinergic"], ["synthesizes", "t_ach"], ["expressed_in", "c_chat"]]], "Shares a locus with SLC18A3 (VAChT), which lies within its first intron."],
+    ["HTR2A", "5-hydroxytryptamine receptor 2A", "13", "q14.2", 46.8, "p_htr2a", ["5-HT2A receptor", "GPCR", "o_membrane", "Gq-coupled serotonin receptor; the main target of psychedelics.",
+      "Densest on the apical dendrites of layer 5 pyramidal neurons in prefrontal cortex.",
+      "Activates Gq → PLCβ, increasing excitability. Psychedelics such as psilocybin act as agonists; many atypical antipsychotics block it.",
+      [["participates", "pw_gq"], ["expressed_in", "c_pyr"]]], "rs6313 (T102C) is a widely studied synonymous variant."],
+    ["PSEN1", "presenilin 1", "14", "q24.2", 73.1, "p_psen1", ["Presenilin 1", "Protease", "o_membrane", "Catalytic core of γ-secretase.",
+      "A multi-pass membrane protein forming the active site of the γ-secretase complex.",
+      "Cuts APP inside the membrane to release amyloid-β; it also cuts Notch and other proteins. Over 300 PSEN1 variants cause early-onset familial Alzheimer's disease.",
+      [["participates", "pw_amyloid"], ["expressed_in", "c_ca1"], ["expressed_in", "c_pyr"]]], "The most common cause of autosomal-dominant early-onset Alzheimer's disease."],
+    ["FOS", "Fos proto-oncogene, AP-1 transcription factor subunit", "14", "q24.3", 75.3, "p_fos", ["c-Fos", "Transcription factor", "o_nucleus", "Immediate-early transcription factor switched on by neural activity.",
+      "A leucine-zipper protein that pairs with Jun proteins to form the AP-1 transcription factor.",
+      "Its gene is transcribed within minutes of activity through CREB and SRF; c-Fos then regulates later-response genes. Its protein is a standard marker of recently active neurons.",
+      [["participates", "pw_creb"], ["expressed_in", "c_msn"], ["expressed_in", "c_bla"], ["expressed_in", "c_ca1"]]], "Its promoter carries a cAMP response element and a serum response element."],
+    ["CHRNA7", "cholinergic receptor nicotinic alpha 7 subunit", "15", "q13.3", 32.0, "p_chrna7", ["α7 nicotinic receptor", "Ion channel", "o_membrane", "Fast, Ca²⁺-permeable acetylcholine receptor.",
+      "A pentamer of five identical α7 subunits, found in hippocampus and cortex, including on interneurons.",
+      "Highly permeable to Ca²⁺ and desensitises within milliseconds; supports attention and filtering of repeated sounds (sensory gating).",
+      [["participates", "pw_cholinergic"], ["expressed_in", "c_ca1"], ["expressed_in", "c_pv"]]], "The 15q13.3 microdeletion that includes it raises the risk of epilepsy, intellectual disability and schizophrenia."],
+    ["UBE3A", "ubiquitin protein ligase E3A", "15", "q11.2", 25.3, "p_ube3a", ["UBE3A (E6AP)", "Ubiquitin ligase", "o_cyto", "Tags proteins for destruction; needed for synapse development.",
+      "An E3 ubiquitin ligase. In most neurons only the copy inherited from the mother is expressed (genomic imprinting).",
+      "Marks target proteins for degradation by the proteasome, shaping synapse maturation and plasticity.",
+      [["participates", "pw_ltp"], ["expressed_in", "c_pyr"], ["expressed_in", "c_purk"]]], "Loss of the maternal copy causes Angelman syndrome."],
+    ["GABRB3", "gamma-aminobutyric acid type A receptor subunit beta3", "15", "q12", 26.5, "p_gabrb3", ["GABA-A receptor β3", "Ion channel", "o_membrane", "Subunit of the main inhibitory receptor.",
+      "One of the β subunits that, with α and γ subunits, form GABA-A receptors.",
+      "Contributes to the GABA-binding site at the β–α interface; strongly expressed during development.",
+      [["participates", "pw_gaba"], ["expressed_in", "c_pyr"], ["expressed_in", "c_tc"]]], "Lies in the 15q11–q13 region; variants are linked to epileptic encephalopathies."],
+    ["GRIN2A", "glutamate ionotropic receptor NMDA type subunit 2A", "16", "p13.2", 9.8, "p_nr2a", ["NMDA receptor GluN2A", "Ion channel", "o_membrane", "Faster NMDA subunit that rises as circuits mature.",
+      "A glutamate-binding NMDA receptor subunit; replaces much of GluN2B at synapses after early development.",
+      "Gives NMDA currents faster decay, narrowing the window for coincidence detection.",
+      [["participates", "pw_ltp"], ["expressed_in", "c_ca1"], ["expressed_in", "c_pyr"]]], "Variants cause the epilepsy–aphasia spectrum; rare loss-of-function variants are a strong schizophrenia risk factor."],
+    ["SLC6A2", "solute carrier family 6 member 2 (noradrenaline transporter)", "16", "q12.2", 55.7, "p_net", ["Noradrenaline transporter", "Transporter", "o_membrane", "Pumps noradrenaline — and prefrontal dopamine — back into terminals.",
+      "A Na⁺/Cl⁻-coupled transporter on noradrenergic terminals.",
+      "Clears noradrenaline; because dopamine transporters are scarce in PFC, it also clears much prefrontal dopamine. Atomoxetine blocks it.",
+      [["clears", "t_ne"], ["clears", "t_da"], ["expressed_in", "c_lc"]]], "Rare loss-of-function variants cause orthostatic intolerance."],
+    ["APP", "amyloid beta precursor protein", "21", "q21.3", 25.9, "p_app", ["Amyloid precursor protein", "Membrane protein", "o_membrane", "Parent protein of amyloid-β.",
+      "A single-pass membrane protein abundant at synapses.",
+      "Its normal roles include synapse formation and axonal transport; β- and γ-secretase cleavage releases amyloid-β.",
+      [["participates", "pw_amyloid"], ["expressed_in", "c_ca1"], ["expressed_in", "c_pyr"]]], "An extra copy (trisomy 21 or APP duplication) leads to early Alzheimer pathology; the protective A673T variant lowers Aβ production."],
+    ["SOD1", "superoxide dismutase 1", "21", "q22.11", 31.7, "p_sod1", ["Superoxide dismutase 1", "Enzyme", "o_cyto", "Antioxidant enzyme; variants cause familial ALS.",
+      "A copper–zinc enzyme found in the cytosol.",
+      "Converts superoxide radicals into hydrogen peroxide and oxygen. Over 150 different variants cause a toxic misfolded form that kills motor neurons.",
+      [["expressed_in", "c_mn"], ["expressed_in", "c_astro"]]], "Accounts for roughly 20% of familial ALS; the antisense drug tofersen lowers its expression."],
+    ["MECP2", "methyl-CpG binding protein 2", "X", "q28", 154.0, "p_mecp2", ["MeCP2", "Chromatin regulator", "o_nucleus", "Reads DNA methylation in mature neurons.",
+      "A nuclear protein nearly as abundant as histones in mature neurons.",
+      "Binds methylated DNA and helps set the expression of many neuronal genes, including BDNF.",
+      [["regulates", "p_bdnf"], ["participates", "pw_creb"], ["expressed_in", "c_pyr"]]], "Loss-of-function variants cause Rett syndrome (mostly in girls); duplication causes MECP2 duplication syndrome."],
+    ["FMR1", "fragile X messenger ribonucleoprotein 1", "X", "q27.3", 147.9, "p_fmrp", ["FMRP", "RNA-binding protein", "o_cyto", "Represses translation of synaptic mRNAs.",
+      "An RNA-binding protein that travels with mRNAs into dendrites.",
+      "Holds back translation of hundreds of target mRNAs until synaptic signals release it, coupling activity to local protein synthesis.",
+      [["participates", "pw_mtor"], ["expressed_in", "c_pyr"], ["expressed_in", "c_ca1"]]], "Over 200 CGG repeats in its 5′ UTR silence the gene and cause fragile X syndrome; 55–200 repeats is the premutation range."],
+    ["MAOA", "monoamine oxidase A", "X", "p11.3", 43.7, "p_maoa", ["Monoamine oxidase A", "Enzyme", "o_mito", "Mitochondrial enzyme that breaks down serotonin, noradrenaline and dopamine.",
+      "A flavoenzyme on the outer mitochondrial membrane.",
+      "Oxidatively deaminates monoamines inside neurons and glia; MAO inhibitors were among the first antidepressants.",
+      [["participates", "pw_da_synth"], ["clears", "t_5ht"], ["clears", "t_ne"], ["expressed_in", "c_lc"], ["expressed_in", "c_astro"]]], "A promoter repeat (uVNTR) alters expression; complete deficiency causes Brunner syndrome."],
+    ["SRY", "sex determining region Y", "Y", "p11.2", 2.8, "p_sry", ["SRY", "Transcription factor", "o_nucleus", "Switch that triggers testis development.",
+      "An HMG-box DNA-binding protein encoded on the Y chromosome.",
+      "Bends DNA and activates SOX9 to start testis development; in rodents it is also expressed in adult male substantia nigra dopamine neurons, where it regulates tyrosine hydroxylase.",
+      [["expressed_in", "c_da"]]], "A single-exon gene; translocation of SRY onto an X chromosome causes 46,XX testicular development."],
+    ["DISC1", "DISC1 scaffold protein", "1", "q42.2", 231.6, "p_disc1", ["DISC1", "Scaffold", "o_cyto", "Scaffold protein involved in neurodevelopment.",
+      "A large scaffold protein that interacts with many partners, including phosphodiesterase 4.",
+      "Influences neuronal migration, neurite growth and cAMP signaling through PDE4.",
+      [["participates", "pw_camp"], ["expressed_in", "c_ca1"], ["expressed_in", "c_pyr"]]], "Named after a balanced 1;11 translocation in a Scottish family with high rates of psychiatric illness; general-population genetic studies have not confirmed it as a common risk gene."],
+    ["SCN2A", "sodium voltage-gated channel alpha subunit 2", "2", "q24.3", 165.2, "p_nav12", ["Nav1.2 sodium channel", "Ion channel", "o_membrane", "Na⁺ channel that starts action potentials in excitatory neurons.",
+      "Concentrated at the axon initial segment of excitatory neurons early in development and in dendrites later.",
+      "Opens on depolarisation to start the action potential and helps spikes back-propagate into dendrites.",
+      [["participates", "pw_ap"], ["expressed_in", "c_pyr"]]], "Gain-of-function variants cause early infantile seizures; loss-of-function variants are among the strongest single-gene risk factors for autism."],
+    ["DRD3", "dopamine receptor D3", "3", "q13.31", 114.1, "p_d3", ["Dopamine D3 receptor", "GPCR", "o_membrane", "High-affinity D2-like receptor concentrated in the nucleus accumbens.",
+      "A Gi/o-coupled dopamine receptor with high affinity for dopamine.",
+      "Found mainly in the ventral striatum and islands of Calleja, where it shapes motivation and drug-seeking.",
+      [["participates", "pw_gi"], ["expressed_in", "c_msn"]]], "rs6280 (Ser9Gly) is the most studied variant."],
+    ["GABRA2", "gamma-aminobutyric acid type A receptor subunit alpha2", "4", "p12", 46.3, "p_gabra2", ["GABA-A receptor α2", "Ion channel", "o_membrane", "Subunit behind the calming effect of benzodiazepines.",
+      "An α subunit concentrated at synapses on the axon initial segment (from chandelier cells) and in limbic areas.",
+      "Receptors containing α2 mediate much of the anti-anxiety effect of benzodiazepines (mouse knock-in studies).",
+      [["participates", "pw_gaba"], ["expressed_in", "c_pyr"], ["expressed_in", "c_bla"]]], "Variants have been associated with alcohol dependence."],
+    ["SYNGAP1", "synaptic Ras GTPase activating protein 1", "6", "p21.32", 33.4, "p_syngap", ["SynGAP", "Signaling protein", "o_cyto", "Brake on synaptic strengthening at the postsynaptic density.",
+      "One of the most abundant proteins of the postsynaptic density.",
+      "Limits Ras–ERK signaling and AMPA receptor insertion; during LTP, CaMKII phosphorylates it and it leaves the synapse, releasing the brake.",
+      [["participates", "pw_ltp"], ["expressed_in", "c_ca1"], ["expressed_in", "c_pyr"]]], "Loss of one copy causes an intellectual disability with epilepsy (SYNGAP1-related disorder)."],
+    ["DCDC2", "doublecortin domain containing 2", "6", "p22.3", 24.2, "p_dcdc2", ["DCDC2", "Microtubule-associated", "o_cyto", "Microtubule protein linked to reading ability.",
+      "A doublecortin-family protein that binds microtubules and is found in primary cilia.",
+      "Implicated in neuronal migration and ciliary signaling during brain development.",
+      [["expressed_in", "c_pyr"]]], "One of the first candidate genes for dyslexia (6p22, the DYX2 locus); an intronic deletion has been associated with reading performance in some samples."],
+    ["RELN", "reelin", "7", "q22.1", 103.5, "p_reln", ["Reelin", "Extracellular glycoprotein", "o_vesicle", "Secreted signal that orders cortical layers.",
+      "A very large secreted glycoprotein (~3,460 amino acids).",
+      "During development, Cajal–Retzius cells secrete it to position migrating neurons into layers; in adults it is released by some interneurons and enhances LTP through ApoER2 and VLDL receptors.",
+      [["participates", "pw_ltp"]]], "Biallelic loss causes lissencephaly with cerebellar hypoplasia."],
+    ["CNTNAP2", "contactin associated protein 2", "7", "q35", 146.1, "p_cntnap2", ["CASPR2", "Cell-adhesion protein", "o_membrane", "Clusters K⁺ channels beside the nodes of myelinated axons.",
+      "A neurexin-family adhesion protein.",
+      "Organises the juxtaparanodal region of myelinated axons and supports dendrite and synapse development. FOXP2 represses its transcription.",
+      [["participates", "pw_myelin"], ["expressed_in", "c_pyr"]]], "One of the largest human genes (~2.3 Mb); variants have been associated with language impairment and autism."],
+    ["NTRK2", "neurotrophic receptor tyrosine kinase 2", "9", "q21.33", 84.7, "p_trkb", ["TrkB receptor", "Receptor tyrosine kinase", "o_membrane", "The receptor for BDNF.",
+      "A receptor tyrosine kinase on axons and dendrites.",
+      "BDNF binding dimerises TrkB; it then activates PI3K–AKT–mTOR, MAPK and PLCγ cascades that support LTP, spine growth and survival.",
+      [["participates", "pw_mtor"], ["participates", "pw_creb"], ["expressed_in", "c_ca1"], ["expressed_in", "c_pyr"]]], "A truncated isoform lacking the kinase domain is common in astrocytes."],
+    ["DBH", "dopamine beta-hydroxylase", "9", "q34.2", 133.6, "p_dbh", ["Dopamine β-hydroxylase", "Enzyme", "o_vesicle", "Converts dopamine into noradrenaline inside vesicles.",
+      "A copper enzyme located inside synaptic vesicles of noradrenergic neurons.",
+      "Adds a hydroxyl group to dopamine, the final step of noradrenaline synthesis.",
+      [["synthesizes", "t_ne"], ["expressed_in", "c_lc"]]], "Complete deficiency causes severe orthostatic hypotension, treatable with droxidopa."],
+    ["DRD4", "dopamine receptor D4", "11", "p15.5", 0.6, "p_d4", ["Dopamine D4 receptor", "GPCR", "o_membrane", "Gi-coupled dopamine receptor enriched in prefrontal cortex.",
+      "A D2-like receptor with an unusually variable third intracellular loop.",
+      "Lowers cAMP in prefrontal pyramidal neurons and interneurons.",
+      [["participates", "pw_gi"], ["expressed_in", "c_pyr"]]], "A 48-bp repeat in exon 3 (2–11 copies) is the best-known variant; the 7-repeat allele has a small association with ADHD."],
+    ["CHRM1", "cholinergic receptor muscarinic 1", "11", "q12.3", 62.9, "p_chrm1", ["M1 muscarinic receptor", "GPCR", "o_membrane", "Gq-coupled acetylcholine receptor for attention and memory.",
+      "The most abundant muscarinic receptor in cortex and hippocampus.",
+      "Activates Gq and closes KCNQ (M-current) K⁺ channels, making pyramidal neurons more excitable. M1/M4 agonists such as xanomeline are used in schizophrenia treatment.",
+      [["participates", "pw_gq"], ["participates", "pw_cholinergic"], ["expressed_in", "c_pyr"], ["expressed_in", "c_ca1"]]], "Intronless coding region."],
+    ["CACNA1C", "calcium voltage-gated channel subunit alpha1 C", "12", "p13.33", 2.0, "p_cav12", ["Cav1.2 L-type channel", "Ion channel", "o_membrane", "Calcium channel that links activity to gene transcription.",
+      "An L-type voltage-gated Ca²⁺ channel in dendrites and cell bodies (and heart muscle).",
+      "Ca²⁺ entering through it activates calmodulin-dependent signals that travel to the nucleus and phosphorylate CREB (excitation–transcription coupling).",
+      [["participates", "pw_creb"], ["expressed_in", "c_pyr"], ["expressed_in", "c_ca1"]]], "rs1006737 is one of the most replicated psychiatric genome-wide association loci; a gain-of-function variant causes Timothy syndrome."],
+    ["TPH2", "tryptophan hydroxylase 2", "12", "q21.1", 71.9, "p_tph2", ["Tryptophan hydroxylase 2", "Enzyme", "o_cyto", "Rate-limiting enzyme for serotonin in the brain.",
+      "The neuronal form of tryptophan hydroxylase (TPH1 works in the gut and pineal gland).",
+      "Converts tryptophan to 5-hydroxytryptophan, which is then decarboxylated to serotonin.",
+      [["synthesizes", "t_5ht"], ["expressed_in", "c_raphe"]]], "Discovered in 2003, which showed that brain and gut serotonin are made by different enzymes."],
+    ["HTR1A", "5-hydroxytryptamine receptor 1A", "5", "q12.3", 63.9, "p_htr1a", ["5-HT1A receptor", "GPCR", "o_membrane", "Gi-coupled serotonin receptor and raphe autoreceptor.",
+      "Found on raphe cell bodies (autoreceptor) and on hippocampal and cortical neurons.",
+      "Opens GIRK K⁺ channels and lowers cAMP. Buspirone is a partial agonist.",
+      [["participates", "pw_gi"], ["expressed_in", "c_raphe"], ["expressed_in", "c_ca1"]]], "Intronless gene; rs6295 in the promoter alters autoreceptor expression."],
+    ["NR3C1", "nuclear receptor subfamily 3 group C member 1 (glucocorticoid receptor)", "5", "q31.3", 143.3, "p_gr", ["Glucocorticoid receptor", "Nuclear receptor", "o_nucleus", "Cortisol receptor that switches stress genes on and off.",
+      "A ligand-activated transcription factor that waits in the cytosol until cortisol binds.",
+      "Moves to the nucleus and binds glucocorticoid response elements; in hippocampus and PFC it provides negative feedback on the HPA axis.",
+      [["participates", "pw_hpa"], ["expressed_in", "c_ca1"], ["expressed_in", "c_pyr"]]], "Early-life care alters methylation of its exon 1F promoter in rodent and human studies."],
+    ["WWC1", "WW and C2 domain containing 1 (KIBRA)", "5", "q34", 168.3, "p_kibra", ["KIBRA", "Scaffold", "o_cyto", "Synaptic scaffold linked to memory performance.",
+      "A cytoplasmic scaffold protein enriched in kidney and brain.",
+      "Binds the kinase PKMζ and protects it from degradation at potentiated synapses, helping maintain long-term memories.",
+      [["participates", "pw_ltp"], ["expressed_in", "c_ca1"]]], "rs17070145 was associated with episodic memory performance in 2006; later replications have been mixed."],
+    ["SLC6A4", "solute carrier family 6 member 4 (serotonin transporter)", "17", "q11.2", 30.2, "p_sert", ["Serotonin transporter", "Transporter", "o_membrane", "Pumps serotonin back into terminals; the target of SSRIs.",
+      "A Na⁺/Cl⁻-coupled transporter on serotonergic axons.",
+      "Clears serotonin from the extracellular space. SSRIs such as fluoxetine block it.",
+      [["clears", "t_5ht"], ["expressed_in", "c_raphe"]]], "The 5-HTTLPR promoter length variant was widely studied for gene × stress effects on depression; large meta-analyses have not supported those effects."],
+    ["DLG4", "discs large MAGUK scaffold protein 4 (PSD-95)", "17", "p13.1", 7.2, "p_psd95", ["PSD-95", "Scaffold", "o_cyto", "Main scaffold that anchors glutamate receptors at excitatory synapses.",
+      "A membrane-associated guanylate kinase with three PDZ domains.",
+      "Binds GluN2 tails directly and AMPA receptors through TARP proteins, holding them in the postsynaptic density; more PSD-95 means stronger synapses.",
+      [["participates", "pw_ltp"], ["expressed_in", "c_ca1"], ["expressed_in", "c_pyr"]]], "Loss-of-function variants cause a neurodevelopmental disorder."],
+    ["HCRT", "hypocretin neuropeptide precursor (orexin)", "17", "q21.2", 42.2, "p_hcrt", ["Orexin (hypocretin)", "Neuropeptide", "o_vesicle", "Peptide that keeps the brain awake.",
+      "A precursor cut into orexin-A and orexin-B.",
+      "Acts on OX1 and OX2 receptors in arousal centres; dual orexin-receptor antagonists such as suvorexant are sleep medications.",
+      [["expressed_in", "c_orx"]]], "Orexin is undetectable in the spinal fluid of most people with narcolepsy type 1."],
+    ["TCF4", "transcription factor 4", "18", "q21.2", 55.2, "p_tcf4", ["TCF4 (E2-2)", "Transcription factor", "o_nucleus", "Developmental transcription factor whose activity is tuned by neural activity.",
+      "A basic helix–loop–helix protein that binds E-box DNA sequences.",
+      "Regulates neuronal differentiation and later genes for excitability; its activity is modulated by PKA.",
+      [["participates", "pw_creb"], ["expressed_in", "c_pyr"]]], "Loss of one copy causes Pitt–Hopkins syndrome; common variants near it are schizophrenia GWAS signals."],
+    ["APOE", "apolipoprotein E", "19", "q13.32", 44.9, "p_apoe", ["Apolipoprotein E", "Lipid carrier", "o_vesicle", "Cholesterol carrier made by astrocytes; ε4 raises Alzheimer's risk.",
+      "A 299-amino-acid lipoprotein, the brain's main cholesterol transporter.",
+      "Delivers lipids to neurons and helps clear amyloid-β; the ε4 form is less effective at clearance.",
+      [["participates", "pw_amyloid"], ["expressed_in", "c_astro"]]], "Three common alleles (ε2, ε3, ε4) defined by rs429358 and rs7412. One ε4 copy raises late-onset Alzheimer's risk roughly 3-fold, two copies roughly 8–12-fold."],
+    ["SLC17A7", "solute carrier family 17 member 7 (VGLUT1)", "19", "q13.33", 49.4, "p_vglut1", ["VGLUT1", "Transporter", "o_vesicle", "Loads glutamate into synaptic vesicles.",
+      "A vesicular transporter in cortical, hippocampal and cerebellar glutamatergic terminals.",
+      "Uses the proton gradient across the vesicle membrane to pump glutamate in; how much it loads affects how much each vesicle releases.",
+      [["participates", "pw_release"], ["expressed_in", "c_pyr"], ["expressed_in", "c_ca1"]]], "Its expression defines most cortical glutamatergic neurons."],
+    ["SNAP25", "synaptosome associated protein 25", "20", "p12.2", 10.2, "p_snap25", ["SNAP-25", "SNARE protein", "o_membrane", "Core protein of the machinery that fuses vesicles.",
+      "A membrane-anchored SNARE protein on the presynaptic terminal.",
+      "Zips together with syntaxin-1 and synaptobrevin to pull vesicle and plasma membranes into fusion. Botulinum toxins A and E cut it, blocking release.",
+      [["participates", "pw_release"], ["expressed_in", "c_pyr"], ["expressed_in", "c_mn"]]], "Two splice variants (SNAP-25a and b) switch during development."],
+    ["CHRNA4", "cholinergic receptor nicotinic alpha 4 subunit", "20", "q13.33", 63.3, "p_chrna4", ["α4β2 nicotinic receptor", "Ion channel", "o_membrane", "High-affinity nicotine receptor that supports attention.",
+      "The α4 subunit pairs with β2 to form the brain's most abundant high-affinity nicotinic receptor.",
+      "Boosts thalamocortical transmission and release of other transmitters; nicotine's reinforcing effects act largely through it.",
+      [["participates", "pw_cholinergic"], ["expressed_in", "c_tc"], ["expressed_in", "c_pyr"]]], "Variants cause autosomal-dominant sleep-related hypermotor epilepsy."],
+    ["SHANK3", "SH3 and multiple ankyrin repeat domains 3", "22", "q13.33", 50.7, "p_shank3", ["SHANK3", "Scaffold", "o_cyto", "Deep scaffold of the excitatory postsynaptic density.",
+      "A large multidomain scaffold protein at the base of the postsynaptic density.",
+      "Links PSD-95–NMDA receptor complexes and mGluR–Homer complexes to the actin skeleton of the spine.",
+      [["participates", "pw_ltp"], ["expressed_in", "c_msn"], ["expressed_in", "c_pyr"]]], "Loss of one copy (22q13 deletion) causes Phelan–McDermid syndrome."]
+  ];
+  G.forEach(([sym, full, chr, band, mb, pid, spec, note]) => {
+    if (spec) {
+      const [name, kind, loc, short, what, how, links] = spec;
+      add(pid, "protein", name, { aka: [sym], kind, loc, short, what, does: how, links });
+    }
+    add("g_" + sym.toLowerCase(), "gene", sym, {
+      aka: [full], chr, band, mb, note, loc: "o_chromatin",
+      short: full.charAt(0).toUpperCase() + full.slice(1) + " — chromosome " + chr + band + ".",
+      what: "Human gene " + sym + " (" + full + ") at cytogenetic band " + chr + band + ", starting near " + mb + " Mb on chromosome " + chr + " (GRCh38, approximate).",
+      does: "Encodes @" + pid + ".", how: note, links: [["encodes", pid]]
+    });
+  });
+  link("p_foxp2", "regulates", "p_cntnap2");
+  link("p_bdnf", "binds", "p_trkb");
+  link("t_da", "binds", "p_d3");
+  link("t_da", "binds", "p_d4");
+  link("t_glu", "binds", "p_nr2a");
+})();
+
+/* =========================================================================
+   ATLAS DATA, PART 3 — cognitive ability models.
+   CHC model (Schneider & McGrew, 2012/2018): stratum II broad abilities.
+   Multicomponent working memory model (Baddeley & Hitch 1974; Baddeley 2000).
+   Each ability maps onto: processes (ordered steps) → regions → cells →
+   signals → proteins → pathways → genes, all existing atlas entities.
+   ========================================================================= */
+(function () {
+  const A = window.ATLAS, E = A.entities;
+  const GENE_NOTE = "Twin studies put the heritability of general cognitive ability at roughly 50% or more in adults, but it is spread over thousands of variants with tiny individual effects. The genes listed here encode proteins in the mechanism; they are not genes 'for' this ability.";
+
+  // step: [title, text, regions[], entities[]]
+  const AB = [
+    /* ---------- CHC: reasoning, memory and control ---------- */
+    { id: "ab_gf", model: "chc", code: "Gf", name: "Fluid reasoning", group: "control",
+      def: "Solving unfamiliar problems that cannot be done from habit or stored knowledge: noticing patterns, inferring rules and drawing conclusions.",
+      narrow: ["Induction (I)", "General sequential reasoning (RG)", "Quantitative reasoning (RQ)"],
+      tests: ["Raven's Progressive Matrices", "Number series", "Verbal analogies"],
+      fns: ["f_control", "f_wm", "f_attention"],
+      steps: [
+        ["Encode the elements", "Visual and parietal cortex build representations of the shapes, their features and positions.", ["occipital", "parietal"], ["c_pyr"]],
+        ["Hold them in mind", "Prefrontal and parietal networks keep the elements active while you compare them. This draws on working memory capacity (Gwm).", ["pfc", "parietal"], ["p_nr2b", "p_d1", "p_adra2a"]],
+        ["Find the relations", "The rostrolateral prefrontal cortex compares relations between relations. Activity and difficulty both rise with the number of relations that must be combined at once.", ["pfc"], ["f_control"]],
+        ["Suppress tempting lures", "Inferior frontal cortex and anterior cingulate inhibit answers that match only part of the pattern; fast GABAergic interneurons help keep competing representations apart.", ["pfc"], ["c_pv", "t_gaba"]],
+        ["Test and update the rule", "A candidate rule is checked against every item. Basal ganglia–thalamic loops gate which rule is held, and dopamine signals whether it worked.", ["pfc", "striatum", "thalamus"], ["t_da", "p_d1"]]
+      ],
+      stack: { cells: ["c_pyr", "c_pv", "c_oligo", "c_msn"], signals: ["t_glu", "t_gaba", "t_da", "t_ne"], proteins: ["p_nr2b", "p_d1", "p_comt", "p_adra2a", "p_mbp"], pathways: ["pw_camp", "pw_gaba", "pw_myelin"], genes: ["g_comt", "g_grin2b", "g_drd1", "g_adra2a", "g_mbp"] },
+      evidence: "The parieto-frontal integration theory (Jung & Haier, 2007) places reasoning in a frontoparietal network. At the level of latent factors, Gf correlates very highly with working memory capacity, and both relate to the integrity of white-matter tracts linking frontal and parietal cortex.",
+      related: ["ab_gwm", "wm_ce"] },
+    { id: "ab_gwm", model: "chc", code: "Gwm", name: "Working memory capacity", group: "control",
+      def: "Holding information in active attention and working with it — keeping track, reordering and updating — over a few seconds.",
+      narrow: ["Auditory short-term storage (Wa)", "Visual-spatial short-term storage (Wv)", "Attentional control (AC)", "Working memory capacity (Wc)"],
+      tests: ["Digit span (forward & backward)", "Corsi block span", "Operation span", "N-back"],
+      fns: ["f_wm", "f_attention"],
+      steps: [
+        ["Encode the items", "Sensory cortex turns sounds or images into neural codes: auditory items in the temporal lobe, visual ones in occipital cortex.", ["temporal", "occipital"], []],
+        ["Gate them in", "Basal ganglia–thalamic loops act as a gate deciding what enters working memory and what is ignored; a dopamine signal opens the gate (the PBWM model).", ["striatum", "thalamus", "vta"], ["t_da", "p_d1", "p_d2"]],
+        ["Maintain them", "Layer III pyramidal neurons in dorsolateral PFC and parietal cortex keep firing through recurrent NMDA-dependent excitation. α2A and D1 receptors tune how stable this activity is.", ["pfc", "parietal"], ["p_nr2b", "p_adra2a", "p_d1", "c_pyr"]],
+        ["Refresh or rehearse", "Verbal items are rehearsed with inner speech (left inferior frontal and premotor cortex, cerebellum); spatial items are refreshed by shifting attention to their locations.", ["motor", "cerebellum", "parietal"], ["wm_pl", "wm_vss"]],
+        ["Manipulate and respond", "Prefrontal networks reorder, update or combine items — for example reversing a digit list — and send the result to motor areas.", ["pfc", "motor"], ["wm_ce"]]
+      ],
+      stack: { cells: ["c_pyr", "c_pv", "c_da", "c_lc", "c_msn"], signals: ["t_glu", "t_gaba", "t_da", "t_ne"], proteins: ["p_nr2b", "p_d1", "p_d2", "p_adra2a", "p_comt", "p_net", "p_dat"], pathways: ["pw_camp", "pw_gi", "pw_gaba"], genes: ["g_comt", "g_drd1", "g_drd2", "g_adra2a", "g_grin2b", "g_slc6a2"] },
+      evidence: "Adults hold about four chunks at once when rehearsal is blocked (Cowan, 2001). Prefrontal 'delay cells' that fire through the delay were found in monkeys by Fuster and by Goldman-Rakic. Both too little and too much prefrontal dopamine or noradrenaline impair performance (an inverted U), which is why COMT Val158Met has been studied here — with small and inconsistent effects in large samples.",
+      related: ["wm_ce", "wm_pl", "wm_vss", "wm_eb", "ab_gf"] },
+    { id: "ab_gl", model: "chc", code: "Gl", name: "Learning efficiency", group: "control",
+      def: "How well new information is learned, stored and consolidated over minutes to hours.",
+      narrow: ["Associative memory (MA)", "Meaningful memory (MM)", "Free-recall memory (M6)"],
+      tests: ["Paired-associate learning", "Story recall", "Word-list learning (e.g., RAVLT)"],
+      fns: ["f_episodic"],
+      steps: [
+        ["Bind the experience", "Cortex sends what you saw and heard through the entorhinal cortex to the hippocampus, which binds the pieces into one episode.", ["temporal", "hippocampus"], ["c_ca1"]],
+        ["Strengthen the synapses", "Coincident activity opens NMDA receptors, Ca²⁺ activates CaMKII and more AMPA receptors are inserted — early LTP.", ["hippocampus"], ["pw_ltp", "p_nr1", "p_camk2", "p_ampa"]],
+        ["Make it last", "Strong or repeated activity recruits CREB, immediate-early genes such as ARC, BDNF–TrkB and mTOR-driven protein synthesis, converting the change into late LTP.", ["hippocampus"], ["p_creb", "p_arc", "p_bdnf", "pw_mtor"]],
+        ["Replay during sleep", "In deep sleep, hippocampal sharp-wave ripples replay the episode in step with thalamic spindles and slow cortical oscillations.", ["hippocampus", "thalamus", "pfc"], []],
+        ["Store in cortex", "Over days to years, memories become more dependent on neocortical networks (systems consolidation).", ["temporal", "pfc"], ["f_semantic"]]
+      ],
+      stack: { cells: ["c_ca1", "c_pyr", "c_astro", "c_chat"], signals: ["t_glu", "t_ach", "t_ne"], proteins: ["p_nr1", "p_camk2", "p_ampa", "p_creb", "p_arc", "p_bdnf", "p_trkb", "p_kibra", "p_psd95"], pathways: ["pw_ltp", "pw_creb", "pw_mtor", "pw_cholinergic"], genes: ["g_grin1", "g_camk2a", "g_bdnf", "g_ntrk2", "g_arc", "g_wwc1", "g_dlg4"] },
+      evidence: "Patient H.M. lost the ability to form new declarative memories after both hippocampi were removed, while skill learning survived. The BDNF Val66Met variant reduces activity-dependent BDNF secretion and was associated with poorer episodic memory in early studies (Egan et al., 2003); later meta-analyses found small or no effects.",
+      related: ["ab_gr", "wm_eb"] },
+    { id: "ab_gr", model: "chc", code: "Gr", name: "Retrieval fluency", group: "control",
+      def: "How quickly and fluently ideas, words and associations can be pulled from long-term memory.",
+      narrow: ["Ideational fluency (FI)", "Associational fluency (FA)", "Word fluency (FW)", "Naming facility (NA)", "Figural fluency (FF)"],
+      tests: ["Category fluency ('name animals in 60 s')", "Letter fluency (F-A-S)", "Rapid automatized naming"],
+      fns: ["f_semantic", "f_control", "f_language"],
+      steps: [
+        ["Set a search cue", "Left inferior frontal cortex holds the retrieval goal — 'animals', or 'words beginning with F'.", ["pfc"], []],
+        ["Activate stored knowledge", "The cue spreads activation through semantic stores in the temporal lobe; related concepts become active together.", ["temporal"], ["f_semantic"]],
+        ["Select one answer", "Inferior frontal cortex picks one candidate among competitors and suppresses the rest.", ["pfc"], ["c_pv", "t_gaba"]],
+        ["Switch clusters", "When a subcategory runs dry (farm animals), frontal–striatal circuits switch to a new one (sea animals).", ["pfc", "striatum"], ["t_da"]],
+        ["Say the word", "The selected word is passed to speech-production areas and articulated.", ["motor", "cerebellum"], ["f_language"]]
+      ],
+      stack: { cells: ["c_pyr", "c_pv", "c_msn"], signals: ["t_glu", "t_gaba", "t_da"], proteins: ["p_foxp2", "p_d2", "p_ampa", "p_cntnap2"], pathways: ["pw_gaba", "pw_ap"], genes: ["g_foxp2", "g_cntnap2", "g_drd2"] },
+      evidence: "Letter fluency depends more on frontal cortex, category fluency more on the temporal lobe; category fluency falls early in Alzheimer's disease, while frontal lesions hit letter fluency hardest.",
+      related: ["ab_gc", "ab_gl"] },
+
+    /* ---------- CHC: speed ---------- */
+    { id: "ab_gs", model: "chc", code: "Gs", name: "Processing speed", group: "speed",
+      def: "Speed and fluency in doing simple, well-practised mental tasks under time pressure, while staying focused.",
+      narrow: ["Perceptual speed (P)", "Rate of test taking (R9)", "Number facility (N)", "Reading speed (RS)", "Writing speed (WS)"],
+      tests: ["Coding / digit–symbol substitution", "Symbol search", "Cancellation tasks"],
+      fns: ["f_attention", "f_vision", "f_motor"],
+      steps: [
+        ["See the symbol", "Visual cortex identifies the symbol in a few tens of milliseconds.", ["occipital"], []],
+        ["Look up the match", "Parietal and prefrontal cortex compare it with the key held in mind.", ["parietal", "pfc"], []],
+        ["Stay on task", "Locus coeruleus noradrenaline and basal forebrain acetylcholine keep arousal and attention steady over the whole timed task.", ["brainstem", "thalamus", "pfc"], ["c_lc", "t_ne", "t_ach"]],
+        ["Write the answer", "Motor cortex and cerebellum produce the response.", ["motor", "cerebellum"], []],
+        ["Repeat quickly", "Overall rate depends on how fast signals travel between these areas — set by myelinated white-matter tracts and fast, reliable spikes and transmitter release.", ["pfc", "parietal"], ["c_oligo", "pw_myelin", "p_mbp", "pw_release"]]
+      ],
+      stack: { cells: ["c_oligo", "c_pyr", "c_lc", "c_chat"], signals: ["t_glu", "t_ne", "t_ach"], proteins: ["p_mbp", "p_cntnap2", "p_nav12", "p_snap25", "p_vglut1"], pathways: ["pw_myelin", "pw_ap", "pw_release", "pw_cholinergic"], genes: ["g_mbp", "g_cntnap2", "g_scn2a", "g_snap25", "g_slc17a7"] },
+      evidence: "Processing speed falls steadily across adulthood and accounts for much of age-related decline in other abilities (Salthouse, 1996). In imaging studies it tracks white-matter integrity measured with diffusion MRI, and it is commonly slowed in multiple sclerosis, where myelin is damaged.",
+      related: ["ab_gt", "ab_gps"] },
+    { id: "ab_gt", model: "chc", code: "Gt", name: "Reaction and decision speed", group: "speed",
+      def: "Speed of making very simple decisions when items are presented one at a time.",
+      narrow: ["Simple reaction time (R1)", "Choice reaction time (R2)", "Inspection time (IT)", "Semantic processing speed (R4)", "Mental comparison speed (R7)"],
+      tests: ["Simple and choice reaction time", "Inspection time"],
+      fns: ["f_attention", "f_motor", "f_habit"],
+      steps: [
+        ["Stimulus arrives", "The thalamus relays the signal to sensory cortex.", ["thalamus", "occipital"], ["c_tc"]],
+        ["Accumulate evidence", "Parietal and prefrontal neurons ramp up their firing as evidence builds toward a threshold, as described by drift-diffusion models.", ["parietal", "pfc"], ["c_pyr"]],
+        ["Commit to a choice", "When the threshold is reached, basal ganglia release the chosen response; dopamine sets how cautious that threshold is.", ["striatum", "thalamus"], ["c_msn", "t_da"]],
+        ["Respond", "Motor cortex sends the command down the corticospinal tract.", ["motor"], ["c_mn"]]
+      ],
+      stack: { cells: ["c_tc", "c_pyr", "c_msn", "c_mn"], signals: ["t_glu", "t_da", "t_ne"], proteins: ["p_ampa", "p_d1", "p_nav12"], pathways: ["pw_ap", "pw_camp"], genes: ["g_gria1", "g_drd1", "g_scn2a"] },
+      evidence: "Choice reaction time rises with the logarithm of the number of options (Hick's law). Inspection time — the shortest exposure needed to judge which of two lines is longer — correlates around −0.5 with IQ in meta-analyses.",
+      related: ["ab_gs"] },
+    { id: "ab_gps", model: "chc", code: "Gps", name: "Psychomotor speed", group: "speed",
+      def: "Speed and fluidity of physical body movements.",
+      narrow: ["Speed of limb movement (R3)", "Writing speed (WS)", "Speed of articulation (PT)", "Movement time (MT)"],
+      tests: ["Finger tapping", "Pegboard speed"],
+      fns: ["f_motor", "f_coord"],
+      steps: [
+        ["Prepare the movement", "Premotor and supplementary motor areas prepare the movement sequence.", ["motor"], []],
+        ["Drive it", "Layer 5 corticospinal neurons fire and their axons carry the command to spinal motor neurons.", ["motor", "brainstem"], ["c_mn", "p_ampa"]],
+        ["Time it", "The cerebellum predicts the movement's timing and smooths repetition.", ["cerebellum"], ["c_purk"]],
+        ["Move the muscle", "Motor neurons release acetylcholine at the neuromuscular junction and the muscle contracts.", ["brainstem"], ["t_ach"]]
+      ],
+      stack: { cells: ["c_mn", "c_purk", "c_oligo"], signals: ["t_glu", "t_ach", "t_gaba"], proteins: ["p_ampa", "p_mglur1", "p_mbp", "p_snap25"], pathways: ["pw_ap", "pw_myelin", "pw_release"], genes: ["g_gria1", "g_grm1", "g_mbp", "g_snap25"] },
+      evidence: "Finger-tapping rate slows with age and in Parkinson's disease and cerebellar disorders, and speeds with practice.",
+      related: ["ab_gp", "ab_gs"] },
+
+    /* ---------- CHC: acquired knowledge ---------- */
+    { id: "ab_gc", model: "chc", code: "Gc", name: "Comprehension-knowledge", group: "knowledge",
+      def: "Breadth and depth of the knowledge and language skills valued by one's culture, and the ability to use them.",
+      narrow: ["General verbal information (K0)", "Language development (LD)", "Lexical knowledge (VL)", "Listening ability (LS)", "Communication ability (CM)"],
+      tests: ["Vocabulary", "General information", "Similarities"],
+      fns: ["f_semantic", "f_language"],
+      steps: [
+        ["Hear or read the word", "Auditory or visual cortex turns the input into a word form.", ["temporal", "occipital"], []],
+        ["Access its meaning", "The anterior temporal lobe acts as a semantic hub, linking features stored across cortex (shape, sound, use).", ["temporal"], ["f_semantic"]],
+        ["Fit it to context", "Inferior frontal and angular gyrus regions select the meaning that fits the sentence and combine words.", ["pfc", "parietal"], []],
+        ["Built over years", "Each fact was first learned through the hippocampus and gradually consolidated into cortex.", ["hippocampus", "temporal"], ["pw_ltp", "pw_creb"]]
+      ],
+      stack: { cells: ["c_pyr", "c_ca1"], signals: ["t_glu", "t_ach"], proteins: ["p_foxp2", "p_bdnf", "p_nr1", "p_cntnap2"], pathways: ["pw_ltp", "pw_creb", "pw_cholinergic"], genes: ["g_foxp2", "g_cntnap2", "g_bdnf", "g_grin1"] },
+      evidence: "In semantic dementia, atrophy of the anterior temporal lobes gradually erodes knowledge of words and objects. Gc keeps rising into late adulthood, while Gf peaks in early adulthood.",
+      related: ["ab_gr", "ab_gkn"], extraNote: "Gc depends strongly on education, language exposure and culture." },
+    { id: "ab_gkn", model: "chc", code: "Gkn", name: "Domain-specific knowledge", group: "knowledge",
+      def: "Depth of specialised knowledge that not everyone is expected to have — a foreign language, medicine, mechanics.",
+      narrow: ["Foreign language proficiency (KL)", "Knowledge of signing (KF)", "Lip-reading skill (LP)", "Geography achievement (A5)", "General science information (K1)", "Mechanical knowledge (MK)", "Knowledge of behavioural content (BC)"],
+      tests: ["Subject-specific knowledge tests"],
+      fns: ["f_semantic", "f_episodic"],
+      steps: [
+        ["Learn new facts", "The hippocampus rapidly binds new information.", ["hippocampus"], ["pw_ltp"]],
+        ["Consolidate", "Sleep-dependent replay transfers knowledge to neocortex.", ["hippocampus", "thalamus", "temporal"], ["pw_creb", "pw_mtor"]],
+        ["Chunk with expertise", "Experts store larger, organised chunks — a chess master sees a familiar position, not 25 separate pieces — in temporal and parietal association cortex.", ["temporal", "parietal"], []],
+        ["Retrieve and apply", "Prefrontal cortex retrieves the relevant knowledge and applies it to the problem.", ["pfc"], []]
+      ],
+      stack: { cells: ["c_ca1", "c_pyr"], signals: ["t_glu", "t_ach", "t_da"], proteins: ["p_nr1", "p_camk2", "p_creb", "p_bdnf"], pathways: ["pw_ltp", "pw_creb", "pw_mtor"], genes: ["g_grin1", "g_camk2a", "g_creb1", "g_bdnf"] },
+      evidence: "London taxi drivers who learned 'The Knowledge' of the city's streets showed larger posterior hippocampi than controls (Maguire et al., 2000), a structural change that tracked years of experience.",
+      related: ["ab_gc", "ab_gl"] },
+    { id: "ab_gq", model: "chc", code: "Gq", name: "Quantitative knowledge", group: "knowledge",
+      def: "Depth and breadth of knowledge about mathematics.",
+      narrow: ["Mathematical knowledge (KM)", "Mathematical achievement (A3)"],
+      tests: ["Arithmetic", "Mathematics achievement tests"],
+      fns: ["f_number", "f_wm"],
+      steps: [
+        ["Sense the quantity", "Neurons around the intraparietal sulcus code approximate magnitude — the 'number sense' shared with other primates.", ["parietal"], ["f_number"]],
+        ["Recall the facts", "Learned facts such as 7 × 8 = 56 are retrieved from verbal memory, with the left angular gyrus and hippocampus involved while they are being learned.", ["parietal", "hippocampus"], []],
+        ["Run the procedure", "Multi-step calculation holds intermediate results in working memory in prefrontal cortex.", ["pfc"], ["ab_gwm"]],
+        ["Check the answer", "Medial frontal cortex detects errors and conflicts.", ["pfc"], []]
+      ],
+      stack: { cells: ["c_pyr", "c_ca1"], signals: ["t_glu", "t_da"], proteins: ["p_nr2b", "p_d1"], pathways: ["pw_ltp", "pw_camp"], genes: ["g_grin2b", "g_drd1"] },
+      evidence: "Developmental dyscalculia affects roughly 3–7% of children and is associated with atypical intraparietal activity. Parietal lesions can cause acalculia.",
+      related: ["ab_gf", "ab_gwm"] },
+    { id: "ab_grw", model: "chc", code: "Grw", name: "Reading and writing", group: "knowledge",
+      def: "Knowledge and skills for written language: decoding, comprehension, spelling and writing.",
+      narrow: ["Reading comprehension (RC)", "Reading decoding (RD)", "Reading speed (RS)", "Spelling ability (SG)", "English usage (EU)", "Writing ability (WA)", "Writing speed (WS)"],
+      tests: ["Word reading", "Reading comprehension", "Spelling", "Written expression"],
+      fns: ["f_reading", "f_language"],
+      steps: [
+        ["See the letters", "Primary visual cortex picks out the strokes.", ["occipital"], []],
+        ["Recognise the word form", "The visual word form area in the left fusiform gyrus recognises letter strings; it specialises only as a person learns to read.", ["occipital", "temporal"], []],
+        ["Map letters to sounds", "Left temporoparietal cortex converts spelling into speech sounds (phonological decoding).", ["parietal", "temporal"], ["wm_pl"]],
+        ["Understand", "Temporal-lobe semantic networks supply the meaning.", ["temporal"], ["f_semantic"]],
+        ["Write", "Motor cortex and cerebellum produce the letters.", ["motor", "cerebellum"], []]
+      ],
+      stack: { cells: ["c_pyr", "c_oligo"], signals: ["t_glu"], proteins: ["p_dcdc2", "p_cntnap2", "p_foxp2", "p_mbp"], pathways: ["pw_myelin", "pw_ltp"], genes: ["g_dcdc2", "g_cntnap2", "g_foxp2"] },
+      evidence: "Dyslexia, found in roughly 5–10% of children, is linked to reduced activation of left temporoparietal cortex. In adults who learned to read late, the visual word form area responds more to letters as literacy improves (Dehaene et al., 2010).",
+      related: ["ab_ga", "ab_gc"] },
+
+    /* ---------- CHC: sensory and motor ---------- */
+    { id: "ab_gv", model: "chc", code: "Gv", name: "Visual processing", group: "sensory",
+      def: "Using mental imagery to solve problems — perceiving, holding, rotating and transforming images.",
+      narrow: ["Visualization (Vz)", "Speeded rotation (SR)", "Closure speed (CS)", "Flexibility of closure (CF)", "Visual memory (MV)", "Spatial scanning (SS)", "Serial perceptual integration (PI)", "Length estimation (LE)", "Perceptual illusions (IL)", "Perceptual alternations (PN)", "Imagery (IM)"],
+      tests: ["Block design", "Mental rotation", "Paper folding"],
+      fns: ["f_vision", "f_spatial"],
+      steps: [
+        ["Detect features", "V1 neurons code edges and orientations; PV interneurons sharpen their tuning.", ["occipital"], ["c_pv", "p_gabaa"]],
+        ["Identify objects", "The ventral stream in the temporal lobe recognises what the object is.", ["temporal"], []],
+        ["Locate and transform", "The dorsal stream in parietal cortex codes where things are and performs mental rotation; response time grows with the angle of rotation (Shepard & Metzler, 1971).", ["parietal"], []],
+        ["Hold the image", "Parietal and prefrontal cortex keep the image active while it is manipulated (the visuospatial sketchpad).", ["parietal", "pfc"], ["wm_vss"]],
+        ["Navigate", "For larger spaces, the hippocampus supplies a map built from place and grid cells.", ["hippocampus"], ["f_spatial"]]
+      ],
+      stack: { cells: ["c_pyr", "c_pv", "c_ca1"], signals: ["t_glu", "t_gaba"], proteins: ["p_gabaa", "p_gad67", "p_nr1", "p_pv"], pathways: ["pw_gaba", "pw_ltp"], genes: ["g_gad1", "g_gabra1", "g_pvalb", "g_grin1"] },
+      evidence: "Right parietal damage impairs spatial transformation and can cause neglect of the left side of space; ventral temporal damage can abolish object or face recognition while spatial ability survives.",
+      related: ["wm_vss"] },
+    { id: "ab_ga", model: "chc", code: "Ga", name: "Auditory processing", group: "sensory",
+      def: "Detecting and processing meaningful patterns in sound, including speech sounds, pitch and rhythm.",
+      narrow: ["Phonetic coding (PC)", "Speech sound discrimination (US)", "Resistance to auditory distortion (UR)", "Memory for sound patterns (UM)", "Maintaining and judging rhythm (U8)", "Musical discrimination and judgement (U1/U9)", "Absolute pitch (UP)", "Sound localisation (UL)"],
+      tests: ["Phoneme blending and segmentation", "Speech-in-noise", "Rhythm and pitch discrimination"],
+      fns: ["f_audition", "f_language"],
+      steps: [
+        ["Split into frequencies", "The cochlea separates sound into frequencies; brainstem nuclei compare the two ears to locate it.", ["brainstem"], []],
+        ["Relay", "The medial geniculate nucleus of the thalamus relays the signal to cortex.", ["thalamus"], ["c_tc"]],
+        ["Map pitch", "Primary auditory cortex is arranged by frequency (tonotopic).", ["temporal"], []],
+        ["Form categories", "Superior temporal cortex groups sounds into phonemes and melodies; precise GABAergic inhibition lets neurons follow rapid changes.", ["temporal"], ["t_gaba", "c_pv"]],
+        ["Track rhythm", "Basal ganglia and cerebellum help predict beat and timing.", ["striatum", "cerebellum"], []]
+      ],
+      stack: { cells: ["c_tc", "c_pyr", "c_pv"], signals: ["t_glu", "t_gaba"], proteins: ["p_ampa", "p_gabaa", "p_foxp2"], pathways: ["pw_gaba", "pw_ap"], genes: ["g_foxp2", "g_gria1", "g_gabra1"] },
+      evidence: "Phonological awareness — a core part of Ga — is one of the strongest predictors of early reading. Absolute pitch is more common in people who began musical training before about age six.",
+      related: ["wm_pl", "ab_grw"] },
+    { id: "ab_go", model: "chc", code: "Go", name: "Olfactory abilities", group: "sensory",
+      def: "Detecting and processing meaningful information in odours.",
+      narrow: ["Olfactory memory (OM)"],
+      tests: ["Odour identification (e.g., UPSIT)", "Odour discrimination"],
+      fns: ["f_smell"],
+      steps: [
+        ["Bind the odorant", "Each olfactory sensory neuron expresses one of about 400 functional odorant receptor genes — the largest gene family in the genome. They signal through Gαolf and cAMP.", [], ["pw_camp"]],
+        ["Sort in the bulb", "Axons of neurons with the same receptor converge on the same glomeruli of the olfactory bulb (not modelled in this atlas).", [], []],
+        ["Reach cortex directly", "Mitral cells project to the piriform cortex in the medial temporal lobe without a thalamic relay.", ["temporal"], []],
+        ["Add emotion and memory", "Direct links to the amygdala and entorhinal cortex explain why smells trigger vivid emotional memories.", ["amygdala", "hippocampus"], []],
+        ["Identify and judge", "Orbitofrontal cortex names the odour and judges its pleasantness.", ["pfc"], []]
+      ],
+      stack: { cells: ["c_pyr", "c_bla"], signals: ["t_glu"], proteins: [], pathways: ["pw_camp"], genes: [] },
+      evidence: "Loss of smell often precedes the motor symptoms of Parkinson's disease by years and is an early sign in Alzheimer's disease.",
+      related: [], extraNote: "Odorant receptor genes are not yet included in this atlas." },
+    { id: "ab_gh", model: "chc", code: "Gh", name: "Tactile abilities", group: "sensory",
+      def: "Detecting and processing meaningful information in touch.",
+      narrow: ["No narrow abilities are well established yet"],
+      tests: ["Two-point discrimination", "Recognising objects by touch (stereognosis)"],
+      fns: ["f_somato"],
+      steps: [
+        ["Touch receptors fire", "Mechanoreceptors in the skin open stretch-gated channels and fire.", [], []],
+        ["Ascend the dorsal columns", "Signals travel up the spinal cord's dorsal columns to the medulla.", ["brainstem"], []],
+        ["Relay", "The ventral posterior thalamus relays them to cortex.", ["thalamus"], ["c_tc"]],
+        ["Map the body", "Primary somatosensory cortex maps the touch onto the body surface.", ["parietal"], []],
+        ["Recognise the object", "Posterior parietal cortex combines touch across fingers to recognise shape.", ["parietal"], []]
+      ],
+      stack: { cells: ["c_tc", "c_pyr"], signals: ["t_glu", "t_gaba"], proteins: ["p_ampa", "p_nav12"], pathways: ["pw_ap", "pw_ltp"], genes: ["g_gria1", "g_scn2a"] },
+      evidence: "Braille readers show enlarged fingertip representations in somatosensory cortex, and their visual cortex also responds during Braille reading.",
+      related: ["ab_gk"] },
+    { id: "ab_gk", model: "chc", code: "Gk", name: "Kinesthetic abilities", group: "sensory",
+      def: "Detecting and processing information about body position and movement (proprioception).",
+      narrow: ["No narrow abilities are well established yet"],
+      tests: ["Joint-position matching", "Movement discrimination"],
+      fns: ["f_somato", "f_coord"],
+      steps: [
+        ["Sense stretch", "Muscle spindles and tendon organs report muscle length and tension.", [], []],
+        ["Inform the cerebellum", "Spinocerebellar tracts carry this signal to the cerebellum for moment-to-moment coordination.", ["brainstem", "cerebellum"], ["c_purk"]],
+        ["Reach awareness", "The dorsal column–thalamic route brings the signal to somatosensory and parietal cortex.", ["thalamus", "parietal"], []],
+        ["Update movement", "Motor cortex adjusts commands from this feedback.", ["motor"], []]
+      ],
+      stack: { cells: ["c_purk", "c_pyr", "c_tc"], signals: ["t_glu"], proteins: ["p_mglur1", "p_ampa"], pathways: ["pw_ltd", "pw_ap"], genes: ["g_grm1", "g_gria1"] },
+      evidence: "People who lose proprioception from large-fibre neuropathy can still move but must watch their limbs to control them.",
+      related: ["ab_gh", "ab_gp"] },
+    { id: "ab_gp", model: "chc", code: "Gp", name: "Psychomotor abilities", group: "sensory",
+      def: "Performing physical movements with precision, coordination or strength.",
+      narrow: ["Static strength (P3)", "Multilimb coordination (P6)", "Finger dexterity (P2)", "Manual dexterity (P1)", "Arm-hand steadiness (P7)", "Control precision (P8)", "Aiming (AI)", "Gross body equilibrium (P4)"],
+      tests: ["Purdue pegboard", "Balance tests", "Grip strength"],
+      fns: ["f_motor", "f_coord"],
+      steps: [
+        ["Plan", "Prefrontal and premotor cortex plan the goal and sequence.", ["pfc", "motor"], []],
+        ["Select", "The basal ganglia release the chosen action and suppress competitors.", ["striatum"], ["c_msn", "t_da"]],
+        ["Execute", "Motor cortex drives spinal motor neurons through the corticospinal tract.", ["motor", "brainstem"], ["c_mn"]],
+        ["Correct", "The cerebellum compares intended and actual movement and corrects errors, learning through LTD.", ["cerebellum"], ["c_purk", "pw_ltd"]]
+      ],
+      stack: { cells: ["c_mn", "c_msn", "c_purk"], signals: ["t_glu", "t_da", "t_gaba", "t_ach"], proteins: ["p_d1", "p_mglur1", "p_ampa"], pathways: ["pw_ltd", "pw_camp"], genes: ["g_grm1", "g_drd1", "g_gria1"] },
+      evidence: "Parkinson's disease (loss of dopamine input to the striatum) slows and shrinks movements; cerebellar damage makes them inaccurate and poorly timed.",
+      related: ["ab_gps", "ab_gk"] },
+
+    /* ---------- Working memory model (Baddeley) ---------- */
+    { id: "wm_ce", model: "wm", code: "CE", name: "Central executive", group: "wm",
+      def: "The attentional controller of working memory. It focuses, divides and switches attention, and links working memory with long-term memory. In the 2000 version of the model it has no storage of its own.",
+      narrow: ["Focusing attention", "Dividing attention", "Switching (shifting)", "Updating", "Inhibition", "Interface with long-term memory"],
+      tests: ["Dual-task performance", "Random generation", "Trail Making B", "Stroop", "Wisconsin Card Sorting"],
+      fns: ["f_control", "f_attention", "f_wm"],
+      steps: [
+        ["Set the goal", "Dorsolateral prefrontal cortex holds the current task goal.", ["pfc"], ["c_pyr", "p_d1", "p_adra2a"]],
+        ["Focus attention", "Prefrontal signals bias activity in parietal and sensory cortex toward what matters (top-down attention).", ["pfc", "parietal", "occipital"], ["f_attention"]],
+        ["Divide or switch", "Frontoparietal and basal ganglia–thalamic loops share or switch processing between the sketchpad and the loop, or between two tasks.", ["pfc", "striatum", "thalamus"], ["t_da"]],
+        ["Inhibit distraction", "Inferior frontal cortex and fast-spiking interneurons suppress irrelevant information.", ["pfc"], ["c_pv", "t_gaba"]],
+        ["Call on long-term memory", "The executive retrieves knowledge from temporal and hippocampal stores into the episodic buffer.", ["hippocampus", "temporal"], ["wm_eb"]]
+      ],
+      stack: { cells: ["c_pyr", "c_pv", "c_da", "c_lc", "c_msn"], signals: ["t_da", "t_ne", "t_glu", "t_gaba"], proteins: ["p_d1", "p_adra2a", "p_comt", "p_nr2b", "p_net"], pathways: ["pw_camp", "pw_gi", "pw_gaba"], genes: ["g_comt", "g_drd1", "g_adra2a", "g_grin2b", "g_slc6a2"] },
+      evidence: "Patients with frontal damage can show a 'dysexecutive syndrome' despite normal span. People with Alzheimer's disease are disproportionately impaired at combining two tasks even when each is set to their own level (Baddeley et al., 1991). Miyake et al. (2000) found updating, shifting and inhibition to be related but separable.",
+      related: ["ab_gwm", "ab_gf", "wm_pl", "wm_vss", "wm_eb"] },
+    { id: "wm_pl", model: "wm", code: "PL", name: "Phonological loop", group: "wm",
+      def: "Holds speech-based information. A phonological store keeps sounds for about two seconds, and an articulatory rehearsal process refreshes them with inner speech.",
+      narrow: ["Phonological store", "Articulatory rehearsal"],
+      tests: ["Digit span", "Non-word repetition", "Word span with similar vs. dissimilar words"],
+      fns: ["f_wm", "f_language"],
+      steps: [
+        ["Speech enters the store", "Heard words go straight to the phonological store, supported by left posterior superior temporal and supramarginal cortex.", ["temporal", "parietal"], []],
+        ["Fade within ~2 seconds", "Without rehearsal the trace decays or is overwritten, which is why longer words lower span (word-length effect).", ["parietal"], []],
+        ["Rehearse silently", "Inner speech in left inferior frontal (Broca's) area, premotor cortex, the supplementary motor area and cerebellum replays the items, refreshing them.", ["motor", "cerebellum"], ["c_purk"]],
+        ["Recode what you read", "Written words reach the store only after rehearsal converts them to sound; saying 'the, the, the' aloud (articulatory suppression) blocks this.", ["occipital", "motor", "parietal"], []]
+      ],
+      stack: { cells: ["c_pyr", "c_purk"], signals: ["t_glu", "t_gaba"], proteins: ["p_ampa", "p_nr2b", "p_foxp2", "p_cntnap2"], pathways: ["pw_ap", "pw_ltp"], genes: ["g_foxp2", "g_cntnap2", "g_gria1"] },
+      evidence: "Similar-sounding letters are harder to recall (phonological similarity effect, Conrad 1964); span falls for longer words (Baddeley, Thomson & Buchanan, 1975). Patient P.V., with a left parietal lesion, had an auditory span of about two items yet normal long-term memory — and could not learn new foreign words.",
+      related: ["ab_gwm", "ab_ga", "ab_grw"], extraNote: "In this atlas, Broca's area is part of the 'Motor cortex' structure." },
+    { id: "wm_vss", model: "wm", code: "VSSP", name: "Visuospatial sketchpad", group: "wm",
+      def: "Holds and manipulates visual and spatial information. A passive visual cache stores form and colour; an inner scribe stores locations and movements and rehearses them.",
+      narrow: ["Visual cache", "Inner scribe (spatial rehearsal)"],
+      tests: ["Corsi block span", "Visual pattern span", "Mental rotation"],
+      fns: ["f_wm", "f_vision", "f_spatial"],
+      steps: [
+        ["Input arrives", "Visual cortex processes what is seen, or memory supplies an image.", ["occipital"], []],
+        ["Visual cache", "Object features such as shape and colour are held in occipitotemporal cortex.", ["occipital", "temporal"], []],
+        ["Inner scribe", "Locations are held in parietal cortex and rehearsed by covert shifts of attention or eye-movement plans (frontal eye fields).", ["parietal", "pfc"], ["c_pyr"]],
+        ["Manipulate", "Parietal cortex rotates or rearranges the image; the right hemisphere tends to dominate spatial tasks.", ["parietal"], ["ab_gv"]]
+      ],
+      stack: { cells: ["c_pyr", "c_pv"], signals: ["t_glu", "t_gaba", "t_da"], proteins: ["p_gabaa", "p_nr2b", "p_d1"], pathways: ["pw_gaba", "pw_camp"], genes: ["g_gabra1", "g_grin2b", "g_drd1"] },
+      evidence: "Tapping out a spatial pattern disrupts memory for locations but not for verbal lists, while articulatory suppression does the opposite. Visual and spatial span can be impaired separately after brain damage (Della Sala et al., 1999).",
+      related: ["ab_gv", "ab_gwm"] },
+    { id: "wm_eb", model: "wm", code: "EB", name: "Episodic buffer", group: "wm",
+      def: "A limited-capacity store, added to the model in 2000, that binds information from the loop, the sketchpad and long-term memory into integrated episodes available to conscious awareness.",
+      narrow: ["Binding of features", "Chunking with long-term knowledge"],
+      tests: ["Sentence span", "Immediate prose recall", "Feature-binding tasks"],
+      fns: ["f_wm", "f_episodic"],
+      steps: [
+        ["Gather", "Information arrives from the phonological loop, the sketchpad and long-term memory.", ["parietal", "temporal"], ["wm_pl", "wm_vss"]],
+        ["Bind", "Features are linked into one object or event — 'red' and 'triangle' become a red triangle; parietal cortex and the hippocampus are leading candidates.", ["parietal", "hippocampus"], ["p_nr1", "pw_ltp"]],
+        ["Chunk", "Long-term knowledge groups items into larger units, so a sentence of about 15 words can be recalled where only about 5 unrelated words could.", ["temporal", "pfc"], ["f_semantic"]],
+        ["Make it available", "The bound episode becomes accessible to awareness and to the central executive.", ["pfc", "thalamus"], ["wm_ce"]]
+      ],
+      stack: { cells: ["c_ca1", "c_pyr", "c_chat"], signals: ["t_glu", "t_ach"], proteins: ["p_nr1", "p_camk2", "p_chrna7", "p_chrm1"], pathways: ["pw_ltp", "pw_cholinergic"], genes: ["g_grin1", "g_camk2a", "g_chrna7", "g_chrm1"] },
+      evidence: "Some densely amnesic patients can immediately recall a prose passage far beyond the capacity of the phonological loop, which led Baddeley to propose the buffer. Its neural basis is less settled than that of the other components.",
+      related: ["ab_gl", "ab_gwm", "wm_ce"] }
+  ];
+
+  AB.forEach((a) => {
+    const regions = [...new Set(a.steps.flatMap((s) => s[2]))];
+    a.regions = regions;
+    E.push({
+      id: a.id, type: "ability", name: a.name, aka: [a.code, a.model === "chc" ? "CHC broad ability" : "working memory model", ...a.narrow.map((n) => n.replace(/\s*\(.*\)/, ""))],
+      kind: a.model === "chc" ? "CHC stratum II · " + a.code : "Working memory model · " + a.code,
+      short: a.def, what: a.def, cog: a,
+      links: a.fns.map((f) => ["relies_on", f])
+    });
+  });
+
+  A.cognition = {
+    abilities: AB, geneNote: GENE_NOTE,
+    chc: {
+      title: "Cattell–Horn–Carroll (CHC) model",
+      intro: "A three-level (stratum) model of human cognitive abilities. Stratum III is general ability (g); stratum II holds about 16 broad abilities; stratum I holds over 80 narrow abilities measured by specific tests. Broad abilities shown follow Schneider & McGrew's 2012 and 2018 revisions.",
+      g: "General intelligence (g) is the shared variance across all broad abilities: people who do well on one kind of test tend to do well on others. Whether g reflects one underlying process or the overlap of many is still debated (process-overlap theory, mutualism). Biologically it correlates modestly with brain size and white-matter integrity and most strongly with frontoparietal network efficiency.",
+      groups: [["control", "Reasoning, memory and control"], ["speed", "Speed"], ["knowledge", "Acquired knowledge"], ["sensory", "Sensory and motor"]],
+      note: "Emotional intelligence (Gei) has been proposed as a further broad ability but is not yet well established, so it is not included."
+    },
+    wm: {
+      title: "Multicomponent working memory model",
+      intro: "Proposed by Baddeley and Hitch in 1974 and extended by Baddeley in 2000. An attentional controller (the central executive) directs two specialised stores — the phonological loop and the visuospatial sketchpad — and an episodic buffer that binds information and connects to long-term memory.",
+      ltm: [["Visual semantics", "f_semantic"], ["Episodic long-term memory", "f_episodic"], ["Language", "f_language"]]
+    }
+  };
+})();
+
+/* =========================================================================
    CORE — utilities, knowledge graph index, settings, event bus, narration
    ========================================================================= */
 const $ = (s, r = document) => r.querySelector(s);
@@ -1373,6 +2166,8 @@ const ICON = {
   settings: I('<circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M4.2 6.2l2.1 2.1M17.7 15.7l2.1 2.1M2.5 12h3M18.5 12h3M4.2 17.8l2.1-2.1M17.7 8.3l2.1-2.1"/>'),
   close: I('<path d="M6 6l12 12M18 6 6 18"/>'),
   min: I('<path d="M6 12h12"/>'),
+  stop: I('<rect x="7" y="7" width="10" height="10" rx="1.5" fill="currentColor" stroke="none"/>'),
+  cog: I('<circle cx="8" cy="6" r="2.2"/><circle cx="16" cy="6" r="2.2"/><circle cx="12" cy="18" r="2.2"/><circle cx="12" cy="11.5" r="1.6"/><path d="M9.4 7.6 11 10.3M14.6 7.6 13 10.3M12 13.1v2.7"/>'),
   play: I('<path d="M7 5v14l11-7Z" fill="currentColor" stroke="none"/>'),
   pause: I('<path d="M8 5v14M16 5v14" stroke-width="2.4"/>'),
   restart: I('<path d="M4 12a8 8 0 1 0 2.4-5.7"/><path d="M4 4v4.5h4.5"/>'),
@@ -1395,15 +2190,15 @@ const KG = (function () {
   const D = window.ATLAS;
   const byId = {};
   D.entities.forEach((e) => (byId[e.id] = e));
-  const TYPE_LABEL = { gene: "Gene", protein: "Protein", transmitter: "Neurotransmitter", pathway: "Pathway", cell: "Cell type", region: "Brain region", function: "Function", organelle: "Organelle", concept: "Genomic concept" };
-  const TIER = { gene: 0, protein: 1, transmitter: 2, pathway: 3, cell: 4, region: 5, function: 6 };
-  const TIER_NAMES = ["Gene", "Protein", "Signal", "Pathway", "Cell", "Region", "Function"];
-  const TIER_TYPES = ["gene", "protein", "transmitter", "pathway", "cell", "region", "function"];
+  const TYPE_LABEL = { gene: "Gene", protein: "Protein", transmitter: "Neurotransmitter", pathway: "Pathway", cell: "Cell type", region: "Brain region", function: "Function", organelle: "Organelle", concept: "Genomic concept", ability: "Cognitive ability" };
+  const TIER = { gene: 0, protein: 1, transmitter: 2, pathway: 3, cell: 4, region: 5, function: 6, ability: 7 };
+  const TIER_NAMES = ["Gene", "Protein", "Signal", "Pathway", "Cell", "Region", "Function", "Ability"];
+  const TIER_TYPES = ["gene", "protein", "transmitter", "pathway", "cell", "region", "function", "ability"];
   const REL = {
     encodes: ["encodes", "encoded by"], expressed_in: ["expressed in", "expresses"], in_region: ["found in", "contains"],
     participates: ["participates in", "involves"], releases: ["releases", "released by"], binds: ["activates", "activated by"],
     supports: ["supports", "supported by"], drives: ["contributes to", "depends on"], projects: ["projects to", "receives input from"],
-    regulates: ["regulates", "regulated by"], synthesizes: ["synthesizes", "synthesized by"], clears: ["clears", "cleared by"], part_of: ["contains", "part of"]
+    regulates: ["regulates", "regulated by"], synthesizes: ["synthesizes", "synthesized by"], clears: ["clears", "cleared by"], part_of: ["contains", "part of"], relies_on: ["relies on", "underlies"]
   };
   const adj = {};
   const edges = [];
@@ -1474,6 +2269,7 @@ const KG = (function () {
     const e = byId[id];
     if (!e) return [];
     if (e.type === "region") return [id];
+    if (e.type === "ability") return e.cog.regions.slice();
     const c = chain(id, 99);
     return c ? c[5].ids : [];
   }
@@ -1495,7 +2291,7 @@ const KG = (function () {
       if (name.includes(q)) s += 25;
       if (aka.split(" | ").some((a) => a === q)) s += 60;
       if (aka.includes(q)) s += 15;
-      s += { region: 6, protein: 5, gene: 5, function: 4, cell: 4, pathway: 4, transmitter: 4 }[e.type] || 0;
+      s += { ability: 7, region: 6, protein: 5, gene: 5, function: 4, cell: 4, pathway: 4, transmitter: 4 }[e.type] || 0;
       out.push({ e, s });
     });
     return out.sort((a, b) => b.s - a.s).slice(0, 24).map((x) => x.e);
@@ -1509,7 +2305,7 @@ const KG = (function () {
 })();
 
 /* ---------- SETTINGS ---------- */
-const DEFAULTS = { preset: "lab", density: "normal", bg: "grid", animSpeed: 1, detail: "detailed", labels: "auto", volume: 0.8, narration: false, voiceRate: 1, ambient: false, camSens: 1, highlight: 1, effects: true, autorotate: false, regionColors: "atlas", animations: true };
+const DEFAULTS = { preset: "lab", density: "normal", bg: "grid", animSpeed: 1, detail: "detailed", labels: "auto", volume: 0.8, narration: false, narrateStart: "manual", voiceRate: 1, ambient: false, camSens: 1, highlight: 1, effects: true, autorotate: false, regionColors: "atlas", animations: true };
 const Settings = Object.assign({}, DEFAULTS, store.get("bga.settings.v1", {}));
 function setSetting(k, v) { Settings[k] = v; store.set("bga.settings.v1", Settings); applySettings(); Bus.emit("settings", k); }
 function applySettings() {
@@ -1536,26 +2332,62 @@ function chipHTML(id, cls = "") {
 function rich(text) { return esc(text).replace(/@([a-z0-9_]+)/gi, (m, id) => (KG.get(id) ? chipHTML(id) : m)); }
 
 /* ---------- narration & ambient sound ---------- */
-const Voice = {
+/* Narrator: reads text one sentence at a time, so it can be paused, resumed
+   and skipped reliably, and shows a control bar in the top bar while active. */
+const Narrator = {
   ok: "speechSynthesis" in window,
-  cur: null,
-  speak(text, onend) {
-    if (!this.ok || !Settings.narration) { onend && onend(false); return false; }
-    try {
-      speechSynthesis.cancel();
-      const u = new SpeechSynthesisUtterance(text.replace(/→/g, ", then "));
-      u.rate = clamp(Settings.voiceRate * Settings.animSpeed, 0.6, 2);
-      u.volume = Settings.volume;
-      const v = speechSynthesis.getVoices().find((v) => /en[-_](GB|US)/i.test(v.lang) && /natural|google|samantha|daniel|serena/i.test(v.name)) || speechSynthesis.getVoices().find((v) => /^en/i.test(v.lang));
-      if (v) u.voice = v;
-      u.onend = () => { if (this.cur === u) { this.cur = null; onend && onend(true); } };
-      u.onerror = () => { if (this.cur === u) { this.cur = null; onend && onend(false); } };
-      this.cur = u;
-      speechSynthesis.speak(u);
-      return true;
-    } catch (e) { onend && onend(false); return false; }
+  queue: [], i: 0, state: "idle", label: "", opts: {}, cur: null,
+  split(text) {
+    return String(text).replace(/→/g, ", then ").replace(/\s+/g, " ").match(/[^.!?]+(?:[.!?]+["”’)]*|$)/g).map((x) => x.trim()).filter((x) => x.length > 1);
   },
-  stop() { this.cur = null; try { this.ok && speechSynthesis.cancel(); } catch (e) {} }
+  read(text, opts = {}) {
+    if (!this.ok) { toast("Narration isn't supported in this browser."); opts.onend && opts.onend(false); return false; }
+    this._halt(); const prev = this.opts; this.opts = {};
+    if (prev.onstop && prev !== opts) prev.onstop("replaced");
+    this.queue = this.split(text); this.i = 0; this.label = opts.label || ""; this.opts = opts;
+    if (!this.queue.length) return false;
+    this.state = "playing"; this._speak(); return true;
+  },
+  _voice() { const vs = speechSynthesis.getVoices(); return vs.find((v) => /en[-_](GB|US)/i.test(v.lang) && /natural|google|samantha|daniel|serena/i.test(v.name)) || vs.find((v) => /^en/i.test(v.lang)); },
+  _halt() { this.cur = null; try { speechSynthesis.cancel(); } catch (e) {} },
+  _speak() {
+    this._halt();
+    if (this.i >= this.queue.length) { const o = this.opts; this.state = "idle"; this.opts = {}; this.render(); o.onend && o.onend(true); return; }
+    try {
+      const u = new SpeechSynthesisUtterance(this.queue[this.i]);
+      u.rate = clamp(Settings.voiceRate * (this.opts.rate || 1), 0.5, 2); u.volume = Settings.volume;
+      const v = this._voice(); if (v) u.voice = v;
+      u.onend = () => { if (this.cur !== u) return; this.i++; this._speak(); };
+      u.onerror = () => { if (this.cur !== u) return; this.cur = null; this.state = "idle"; const o = this.opts; this.opts = {}; this.render(); o.onend && o.onend(false); };
+      this.cur = u; speechSynthesis.speak(u);
+    } catch (e) { this.state = "idle"; }
+    this.render();
+  },
+  pause(fromOwner) { if (this.state !== "playing") return; this.state = "paused"; this._halt(); if (!fromOwner && this.opts.onpause) this.opts.onpause(); this.render(); },
+  resume(fromOwner) { if (this.state !== "paused") return; this.state = "playing"; if (!fromOwner && this.opts.onresume) this.opts.onresume(); this._speak(); },
+  toggle() { this.state === "playing" ? this.pause() : this.resume(); },
+  skip(d) { if (this.state === "idle") return; this.i = clamp(this.i + d, 0, this.queue.length - 1); if (this.state === "playing") this._speak(); else this.render(); },
+  stop(fromOwner) { if (this.state === "idle") return; this._halt(); this.state = "idle"; const o = this.opts; this.opts = {}; this.render(); if (!fromOwner && o.onstop) o.onstop("user"); },
+  owner() { return this.state === "idle" ? null : this.opts.src || null; },
+  render() {
+    const el = document.getElementById("narrator"); if (!el) return;
+    el.hidden = this.state === "idle";
+    if (el.hidden) return;
+    el.querySelector(".nr-label").textContent = this.label || "Narration";
+    el.querySelector(".nr-pos").textContent = (this.i + 1) + "/" + this.queue.length;
+    const pb = el.querySelector(".nr-pp");
+    pb.innerHTML = this.state === "playing" ? ICON.pause : ICON.play;
+    pb.setAttribute("aria-label", this.state === "playing" ? "Pause narration (P)" : "Resume narration (P)");
+    pb.title = pb.getAttribute("aria-label");
+    el.classList.toggle("paused", this.state === "paused");
+  }
+};
+// Back-compat shim for older call sites
+const Voice = {
+  get ok() { return Narrator.ok; },
+  get cur() { return Narrator.state === "playing"; },
+  speak(text, onend) { return Narrator.read(text, { onend }); },
+  stop() { Narrator.stop(true); }
 };
 const Ambient = {
   ctx: null, g: null,
@@ -2269,12 +3101,14 @@ const Cell = (function () {
       labelEls.push({ el: lab, stage: "karyotype", pos: () => grp.position.clone().add(new THREE.Vector3(0, -(c.len - c.cen) * CHR_S - 0.12, 0)), kind: "chr", id: c.id });
       $("#labels").append(lab);
       // gene loci
-      KG.D.entities.filter((e) => e.type === "gene" && e.chr === c.id.replace("chr", "")).forEach((gene) => {
+      KG.D.entities.filter((e) => e.type === "gene" && e.chr === c.id.replace("chr", "")).sort((x, y) => x.mb - y.mb).forEach((gene, gi) => {
         const ring = new THREE.Mesh(new THREE.TorusGeometry(0.17, 0.022, 8, 28), stdMat(0x6ea8ff, { opacity: 1, emissive: 0x16306a }));
         ring.rotation.x = Math.PI / 2; ring.position.y = (c.cen - gene.mb) * CHR_S;
         grp.add(reg(gene.id, ring, "kary")); geneRings[gene.id] = ring;
-        const gl = h("div", { class: "l3d", style: "font-family:var(--f-mono);font-style:italic" }, gene.name);
-        labelEls.push({ el: gl, stage: "karyotype", pos: () => grp.position.clone().add(new THREE.Vector3(0.2, ring.position.y + 0.06, 0)), kind: "gene", id: gene.id });
+        // alternate labels left/right of the chromosome so neighbouring loci don't overlap
+        const right = gi % 2 === 0;
+        const gl = h("div", { class: "l3d gl3d " + (right ? "gr" : "gl"), style: "font-family:var(--f-mono);font-style:italic" }, gene.name);
+        labelEls.push({ el: gl, stage: "karyotype", pos: () => grp.position.clone().add(new THREE.Vector3(right ? 0.2 : -0.2, ring.position.y, 0)), kind: "gene", id: gene.id });
         $("#labels").append(gl);
       });
     });
@@ -2549,7 +3383,7 @@ const Cell = (function () {
    circuit → spike → release → receptor → cascade → nucleus → function
    ========================================================================= */
 const Mech = (function () {
-  let el, cv, ctx, spec = null, id = null, steps = [], si = 0, playing = false, t0 = 0, elapsed = 0, dur = 6, spoke = false, raf = 0, W = 0, H = 0, regionId = null;
+  let el, cv, ctx, spec = null, id = null, steps = [], si = 0, playing = false, t0 = 0, elapsed = 0, dur = 6, raf = 0, W = 0, H = 0, regionId = null, narrFrom = -1;
   const PH = {
     circuit: "Circuit", spike: "Neural activity", release: "Transmission", bind: "Receptor activation",
     cascade: "Intracellular signaling", nucleus: "Gene expression", output: "Function"
@@ -2570,7 +3404,7 @@ const Mech = (function () {
         <label style="display:inline-flex;align-items:center;gap:4px;font-size:12px;color:var(--muted);margin-left:4px">Speed
           <select id="mSpeed">${[0.5, 0.75, 1, 1.25, 1.5, 2].map((s) => `<option value="${s}">${s}×</option>`).join("")}</select></label>
         <span style="flex:1"></span>
-        <button id="mVoice" aria-pressed="false" title="Narration">${ICON.voice}<span>Narration</span></button>
+        <label class="narrsel" title="Choose the step where narration begins">${ICON.voice}<span>Narrate</span><select id="mNarr" aria-label="When narration starts"></select></label>
       </div>`;
     $("#app").append(el);
     cv = $("#mCanvas"); ctx = cv.getContext("2d");
@@ -2580,11 +3414,28 @@ const Mech = (function () {
     $("#mPrev").onclick = () => go(si - 1);
     $("#mRestart").onclick = () => { go(0); play(); };
     $("#mSpeed").onchange = (e) => setSetting("animSpeed", +e.target.value);
-    $("#mVoice").onclick = () => { setSetting("narration", !Settings.narration); syncVoice(); if (Settings.narration && playing) speakStep(); else Voice.stop(); };
+    $("#mNarr").onchange = (e) => setNarrFrom(+e.target.value);
+    $("#mCap").addEventListener("click", (e) => {
+      if (e.target.closest("[data-mread]")) readStep();
+      if (e.target.closest("[data-mfrom]")) { setNarrFrom(si); if (!playing) play(); }
+    });
     new ResizeObserver(size).observe(cv);
   }
-  function syncVoice() { $("#mVoice").setAttribute("aria-pressed", Settings.narration ? "true" : "false"); $("#mSpeed").value = String(Settings.animSpeed); }
+  function syncCtrls() {
+    $("#mSpeed").value = String(Settings.animSpeed);
+    $("#mNarr").innerHTML = `<option value="-1">Off</option>` + steps.map((s, i) => `<option value="${i}">${i === 0 ? "From the start" : "From step " + (i + 1)} · ${PH[s.k]}</option>`).join("");
+    $("#mNarr").value = String(narrFrom);
+    el.querySelector(".narrsel").classList.toggle("on", narrFrom >= 0);
+  }
   function size() { const r = cv.getBoundingClientRect(), d = Math.min(2, window.devicePixelRatio || 1); W = r.width; H = r.height; cv.width = W * d; cv.height = H * d; ctx.setTransform(d, 0, 0, d, 0, 0); }
+  const narrates = (i) => narrFrom >= 0 && i >= narrFrom;
+  function setNarrFrom(v) {
+    narrFrom = v; setSetting("narration", v === 0);
+    $("#mNarr").value = String(v); el.querySelector(".narrsel").classList.toggle("on", v >= 0);
+    if (v < 0) { if (Narrator.owner() === "mech") Narrator.stop(true); }
+    else if (playing && narrates(si) && Narrator.owner() !== "mech") speakStep();
+    renderCap();
+  }
 
   function open(regId) {
     const m = KG.mech[KG.get(regId) && KG.get(regId).mech];
@@ -2594,32 +3445,42 @@ const Mech = (function () {
     const order = ["circuit", "spike", "release", "bind", "cascade", "nucleus", "output"].filter((k) => k !== "nucleus" || m.nucleus);
     const keep = want === "overview" ? ["circuit", "release", "output"] : want === "intermediate" ? ["circuit", "spike", "release", "bind", "output"] : order;
     steps = order.filter((k) => keep.includes(k)).map((k) => ({ k, text: k === "circuit" ? m.input : k === "cascade" ? m.cascadeText : m[k] }));
+    narrFrom = Settings.narration ? 0 : -1;
     $("#mTitle").textContent = m.title;
     $("#mProg").innerHTML = steps.map((s, i) => `<i data-i="${i}" title="${PH[s.k]}"></i>`).join("");
     $$("#mProg i").forEach((x) => (x.onclick = () => go(+x.dataset.i)));
-    el.hidden = false; el.classList.remove("minimized"); size(); syncVoice();
+    el.hidden = false; el.classList.remove("minimized"); size(); syncCtrls();
     if (App.view === "brain") Brain.showCircuit(m.circuit);
     Panels.refresh();
     go(0);
     if (Settings.animations) play(); else pause();
     Bus.emit("mech:play", regId);
-    loop();
+    if (!raf) loop();
   }
   function close() {
-    pause(); el.hidden = true; Voice.stop(); cancelAnimationFrame(raf); raf = 0;
+    pause(); el.hidden = true; if (Narrator.owner() && Narrator.owner().startsWith("mech")) Narrator.stop(true);
+    cancelAnimationFrame(raf); raf = 0;
     Brain.clearCircuit(); spec = null;
     el.classList.remove("minimized"); Panels.refresh();
+  }
+  function renderCap() {
+    if (!spec) return;
+    const s = steps[si], links = linksFor(s.k);
+    const nb = narrFrom < 0 || si < narrFrom ? `<button class="minibtn" data-mfrom>${ICON.voice}Narrate from here</button>` : "";
+    $("#mCap").innerHTML = `<span class="stepname">${si + 1} / ${steps.length} · ${PH[s.k]}${narrates(si) ? ' <span class="narrtag">narrated</span>' : ""}</span>${esc(s.text)}
+      <div class="caprow">${links.length ? `<div class="chiprow">${links.map((x) => chipHTML(x)).join("")}</div>` : "<span></span>"}
+      <span class="capbtns"><button class="minibtn" data-mread>${ICON.voice}Read this step</button>${nb}</span></div>`;
   }
   function go(i) {
     if (!spec) return;
     if (i >= steps.length) { pause(); si = steps.length - 1; elapsed = dur; render(); return; }
-    si = clamp(i, 0, steps.length - 1); elapsed = 0; spoke = false; t0 = performance.now();
+    if (Narrator.owner() === "mech") Narrator.stop(true);
+    si = clamp(i, 0, steps.length - 1); elapsed = 0; t0 = performance.now();
     const s = steps[si];
     dur = Math.max(5, s.text.split(/\s+/).length * 0.36) / Settings.animSpeed;
-    $$("#mProg i").forEach((x, j) => { x.classList.toggle("done", j < si); x.classList.toggle("cur", j === si); });
-    const links = linksFor(s.k);
-    $("#mCap").innerHTML = `<span class="stepname">${si + 1} / ${steps.length} · ${PH[s.k]}</span>${esc(s.text)}${links.length ? `<div class="chiprow" style="margin-top:6px">${links.map((x) => chipHTML(x)).join("")}</div>` : ""}`;
-    if (playing) speakStep();
+    $$("#mProg i").forEach((x, j) => { x.classList.toggle("done", j < si); x.classList.toggle("cur", j === si); x.classList.toggle("nar", narrates(j)); });
+    renderCap();
+    if (playing && narrates(si)) speakStep();
     render();
   }
   function linksFor(k) {
@@ -2632,21 +3493,33 @@ const Mech = (function () {
     if (k === "output") return KG.neighbors(regionId).filter((n) => n.rel === "supports").map((n) => n.id);
     return [];
   }
-  function speakStep() { spoke = true; Voice.speak(steps[si].text, (ok) => { if (ok && playing && elapsed >= dur * 0.6) go(si + 1); }); }
-  function play() {
+  function speakStep() {
+    const label = spec.title + " · step " + (si + 1) + " of " + steps.length;
+    Narrator.read(steps[si].text, { src: "mech", label, rate: Settings.animSpeed,
+      onend: (ok) => { if (ok && playing && elapsed >= dur * 0.6) go(si + 1); },
+      onpause: () => pause(true), onresume: () => play(true) });
+  }
+  function readStep() { Narrator.read(steps[si].text, { src: "mech-manual", label: spec.title + " · step " + (si + 1), rate: Settings.animSpeed }); }
+  function play(fromNarrator) {
     if (!spec) return;
     if (si === steps.length - 1 && elapsed >= dur) go(0);
     playing = true; t0 = performance.now() - elapsed * 1000;
     $("#mPlay").innerHTML = ICON.pause; $("#mPlay").setAttribute("aria-label", "Pause");
-    if (Settings.narration) speakStep();
+    if (fromNarrator) return;
+    if (Narrator.owner() === "mech" && Narrator.state === "paused") Narrator.resume(true);
+    else if (narrates(si) && Narrator.owner() !== "mech") speakStep();
   }
-  function pause() { playing = false; if (el) { $("#mPlay").innerHTML = ICON.play; $("#mPlay").setAttribute("aria-label", "Play"); } Voice.stop(); }
+  function pause(fromNarrator) {
+    playing = false;
+    if (el) { $("#mPlay").innerHTML = ICON.play; $("#mPlay").setAttribute("aria-label", "Play"); }
+    if (!fromNarrator && Narrator.owner() === "mech") Narrator.pause(true);
+  }
   function loop() {
     raf = requestAnimationFrame(loop);
     if (!spec) return;
     if (playing) {
       elapsed = (performance.now() - t0) / 1000;
-      const waitingForVoice = Settings.narration && Voice.cur && spoke;
+      const waitingForVoice = Narrator.owner() === "mech" && Narrator.state === "playing";
       if (elapsed >= dur && !waitingForVoice) { go(si + 1); t0 = performance.now(); }
     }
     render();
@@ -2813,7 +3686,7 @@ const Mech = (function () {
     }
     ctx.stroke();
   }
-  return { build, open, close, pause, get open_() { return !!spec; } };
+  return { build, open, close, pause: () => pause(), get open_() { return !!spec; } };
 })();
 
 /* =========================================================================
@@ -2875,23 +3748,22 @@ const Sim = (function () {
             <span style="flex:1"></span>
             <label style="font-size:12px;color:var(--muted);display:inline-flex;gap:6px;align-items:center">Speed
               <select id="simSpeed" style="background:var(--panel-solid);border:1px solid var(--line);border-radius:6px;color:var(--fg);padding:3px">${[0.5, 1, 1.5, 2, 3].map((s) => `<option value="${s}">${s}×</option>`).join("")}</select></label>
-            <button class="btn" id="simVoice" aria-pressed="false">${ICON.voice} Narration</button>
+            <button class="btn" id="simVoice" title="Read this stage aloud">${ICON.voice} Read this stage</button>
           </div></div></div>`;
     $("#simPrev").onclick = () => goto(si - 1);
     $("#simNext").onclick = () => goto(si + 1);
     $("#simPlay").onclick = () => (playing ? stop() : start());
     $("#simAuto").onclick = () => { auto = !auto; $("#simAuto").setAttribute("aria-pressed", auto); if (auto) { if (si === 0) goto(1); start(); } else stop(); };
     $("#simSpeed").onchange = (e) => setSetting("animSpeed", +e.target.value);
-    $("#simVoice").onclick = () => { setSetting("narration", !Settings.narration); sync(); if (Settings.narration) narrate(); else Voice.stop(); };
+    $("#simVoice").onclick = () => readStage();
     $$("#simLevel button").forEach((b) => (b.onclick = () => setSetting("detail", b.dataset.l)));
-    Bus.on("settings", (k) => { if (k === "detail" || k === "animSpeed" || k === "narration") { sync(); if (k === "detail") { si = Math.min(si, active().length - 1); render(); } } });
+    Bus.on("settings", (k) => { if (k === "detail" || k === "animSpeed") { sync(); if (k === "detail") { si = Math.min(si, active().length - 1); render(); } } });
     new ResizeObserver(() => { if (!root.hidden) renderStage(); }).observe($("#simStage"));
     sync(); render();
   }
   function sync() {
     $$("#simLevel button").forEach((b) => b.setAttribute("aria-pressed", b.dataset.l === Settings.detail));
     $("#simSpeed").value = String(Settings.animSpeed);
-    $("#simVoice").setAttribute("aria-pressed", Settings.narration);
   }
   function load(k, opts = {}) { if (k) key = k; si = opts.stage != null ? opts.stage : 1; prog = 0; stop(); render(); Bus.emit("sim:load", key); }
   function goto(i) {
@@ -2918,7 +3790,6 @@ const Sim = (function () {
       if (prog >= 1) { stop(false); if (auto) timer = setTimeout(() => goto(si + 1), 1400 / Settings.animSpeed); return; }
       timer = requestAnimationFrame(tick);
     };
-    narrate();
     timer = requestAnimationFrame(tick);
   }
   function stop(resetAuto) {
@@ -2926,7 +3797,12 @@ const Sim = (function () {
     if ($("#simPlay")) $("#simPlay").innerHTML = ICON.play + " Animate";
     if (resetAuto !== false && auto) { auto = false; $("#simAuto").setAttribute("aria-pressed", false); }
   }
-  function narrate() { const l = $("#simStage .lede"); if (l && Settings.narration) Voice.speak(l.textContent); }
+  function readStage() {
+    const l = $("#simStage .lede"), m = $("#simStage .molnote");
+    if (!l) return;
+    Narrator.read(l.textContent + (m ? " " + m.textContent.replace(/^Molecular detail · /, "") : ""), { src: "sim", label: "DNA → protein · " + active()[si].name });
+  }
+  function narrate() { if (Settings.narrateStart === "auto") readStage(); }
 
   function render() {
     const st = active();
@@ -2936,7 +3812,7 @@ const Sim = (function () {
     $("#simPlay").style.visibility = animated(st[si].id) ? "visible" : "hidden";
     prog = animated(st[si].id) ? prog : 1;
     renderStage();
-    if (Settings.narration) narrate();
+    narrate();
   }
 
   /* ---------- helpers ---------- */
@@ -3128,7 +4004,7 @@ const MapView = (function () {
     }
     const maxN = Math.max(...cols.map((c) => c.length));
     cols.forEach((c, t) => { const off = ((maxN - c.length) * ROWH) / 2; c.forEach((id, i) => (pos[id] = [60 + t * COLW, TOP + 20 + off + i * ROWH])); });
-    return { W: 60 + 6 * COLW + 170, H: TOP + 40 + maxN * ROWH };
+    return { W: 60 + (KG.TIER_TYPES.length - 1) * COLW + 170, H: TOP + 40 + maxN * ROWH };
   }
   function build() {
     root = $("#viewMap");
@@ -3309,6 +4185,19 @@ const Study = (function () {
       const wrong = shuffle(ofType("cell").filter((c) => !cs.includes(c.id) && KG.neighbors(c.id).some((n) => n.rel === "releases"))).slice(0, 3).map((c) => c.id);
       return { text: `Which of these cells releases ${t.name.toLowerCase() === "gaba" ? "GABA" : t.name.toLowerCase()}?`, opts: shuffle([right, ...wrong]), answer: right, explain: `${KG.get(right).name}: ${KG.get(right).short}`, about: right };
     },
+    ability() {
+      const all = ofType("ability"), a = pick(all), c = a.cog;
+      const pool = all.filter((x) => x.id !== a.id && x.cog.model === c.model);
+      const opts = shuffle([a.id, ...shuffle(pool).slice(0, 3).map((x) => x.id)]);
+      const step = pick(c.steps);
+      return { text: `${c.model === "chc" ? "Which CHC broad ability" : "Which working memory component"} includes this process: “${step[0]} — ${step[1]}”`, opts, answer: a.id, explain: `${c.code} · ${a.name}: ${c.def}`, about: a.id };
+    },
+    abilityRegion() {
+      const a = pick(ofType("ability").filter((x) => x.cog.regions.length)), rs = a.cog.regions, right = pick(rs);
+      const wrong = shuffle(ofType("region").filter((r) => !rs.includes(r.id))).slice(0, 3).map((r) => r.id);
+      if (wrong.length < 3) return GEN.gene();
+      return { text: `Which brain structure takes part in ${a.name.toLowerCase()} (${a.cog.code})?`, opts: shuffle([right, ...wrong]), answer: right, explain: `${KG.get(right).name} appears in: ${a.cog.steps.filter((s) => s[2].includes(right)).map((s) => s[0]).join("; ")}.`, about: a.id };
+    },
     chain(r) {
       r = r || pick(ofType("region").filter((x) => x.drill)).id;
       const d = KG.get(r).drill, fn = KG.neighbors(r).find((n) => n.rel === "supports");
@@ -3318,7 +4207,7 @@ const Study = (function () {
     }
   };
   function newQuestion(type, arg) {
-    if (!type) type = pick(["gene", "region", "pathway", "chain", "cell", "gene", "region"]);
+    if (!type) type = pick(["gene", "region", "pathway", "chain", "cell", "ability", "abilityRegion", "region"]);
     if (type === "chain" && arg) region = arg;
     q = GEN[type](arg); q.type = type; answered = false; orderPick = [];
     if (App.view !== "study" && type === "chain" && arg) App.go("study");
@@ -3357,6 +4246,240 @@ const Study = (function () {
 })();
 
 /* =========================================================================
+   ABILITIES EXPLORER — CHC stratum II broad abilities and the multicomponent
+   working memory model, each traced to processes, regions and molecules.
+   ========================================================================= */
+const Cog = (function () {
+  const D = window.ATLAS.cognition;
+  let root, model = State.cogModel || "chc", sel = State.cogSel || "ab_gwm";
+  const W = { i: -1, playing: false, timer: 0, narrFrom: -1 };
+  const ab = (id) => (KG.get(id) && KG.get(id).cog) || null;
+  const GROUP = Object.fromEntries(D.chc.groups);
+
+  function build() {
+    root = $("#viewCog");
+    root.innerHTML = `<div class="vhead"><div class="grow"><div class="eyebrow">Cognitive abilities</div><h1>From ability to molecule</h1>
+      <p>Pick an ability to see the processes it runs on, the brain structures that carry them out, and the cells, signals, proteins and genes underneath.</p></div>
+      <div class="seg" role="group" aria-label="Model"><button data-model="chc">CHC model</button><button data-model="wm">Working memory model</button></div></div>
+      <div class="cogwrap"><section class="cogmodel" id="cogModel" aria-label="Model diagram"></section><section class="cogdetail" id="cogDetail"></section></div>`;
+    root.addEventListener("click", onClick);
+    Bus.on("view", (v) => { if (v !== "cog") stopWalk(); });
+    render();
+  }
+  function onClick(e) {
+    const t = (s) => e.target.closest(s);
+    let b;
+    if ((b = t("[data-model]"))) { setModel(b.dataset.model); return; }
+    if ((b = t("[data-ab]"))) { select(b.dataset.ab); return; }
+    if (t("[data-g]")) { sel = "g"; State.cogSel = sel; saveState(); stopWalk(); render(); return; }
+    if ((b = t("[data-cact]"))) {
+      const a = b.dataset.cact;
+      if (a === "walk") startWalk(0);
+      if (a === "trace") trace3D(sel);
+      if (a === "read") readAll();
+      if (a === "map") { App.go("map"); MapView.setFocus(sel); App.open(sel, { stay: true, quiet: true }); }
+      if (a === "prev") stepTo(W.i - 1);
+      if (a === "next") stepTo(W.i + 1);
+      if (a === "pp") W.playing ? pauseWalk() : resumeWalk();
+      if (a === "stop") stopWalk();
+      return;
+    }
+    if ((b = t("[data-sread]"))) { const i = +b.dataset.sread, s = ab(sel).steps[i]; Narrator.read(s[0] + ". " + s[1], { src: "cog-manual", label: ab(sel).name + " · step " + (i + 1) }); return; }
+    if ((b = t("[data-sfrom]"))) { W.narrFrom = +b.dataset.sfrom; startWalk(+b.dataset.sfrom); return; }
+    if ((b = t("[data-sgo]"))) { if (W.i >= 0) stepTo(+b.dataset.sgo); }
+  }
+  function setModel(m) {
+    model = State.cogModel = m; saveState();
+    const cur = ab(sel);
+    if (!cur || cur.model !== m) sel = m === "chc" ? "ab_gf" : "wm_ce";
+    State.cogSel = sel; stopWalk(); render();
+  }
+  function select(id) {
+    const a = ab(id); if (!a) return;
+    sel = State.cogSel = id; model = State.cogModel = a.model; saveState();
+    stopWalk(); render();
+    const d = $("#cogDetail"); if (d) d.scrollTop = 0;
+  }
+  function render() {
+    if (!root) return;
+    $$("[data-model]", root).forEach((b) => b.setAttribute("aria-pressed", b.dataset.model === model));
+    $("#cogModel").innerHTML = model === "chc" ? chcHTML() : wmHTML();
+    $("#cogDetail").innerHTML = sel === "g" ? gHTML() : detailHTML(ab(sel));
+    syncWalk();
+  }
+
+  /* ---------- model diagrams ---------- */
+  function tile(a) {
+    return `<button class="abtile g-${a.group}" data-ab="${a.id}" aria-pressed="${a.id === sel}"><b>${esc(a.code)}</b><span>${esc(a.name)}</span></button>`;
+  }
+  function chcHTML() {
+    const cur = sel === "g" ? null : ab(sel);
+    return `<div class="eyebrow">${esc(D.chc.title)}</div><p class="cogintro">${esc(D.chc.intro)}</p>
+      <div class="chc">
+        <div class="stratum s3"><span class="slabel">Stratum III · general</span><button class="gnode" data-g aria-pressed="${sel === "g"}"><b>g</b><span>General intelligence</span></button></div>
+        <div class="stratum s2"><span class="slabel">Stratum II · broad abilities</span>
+          <div class="groups">${D.chc.groups.map(([k, n]) => `<div class="grp"><h5>${esc(n)}</h5><div class="tiles">${D.abilities.filter((a) => a.model === "chc" && a.group === k).map(tile).join("")}</div></div>`).join("")}</div></div>
+        <div class="stratum s1"><span class="slabel">Stratum I · narrow abilities${cur ? " of " + esc(cur.code) : ""}</span>
+          <div class="narrow">${cur ? cur.narrow.map((n) => `<span class="tag">${esc(n)}</span>`).join("") : '<span class="muted">Select a broad ability to see its narrow abilities.</span>'}</div></div>
+      </div><p class="cognote">${esc(D.chc.note)}</p>`;
+  }
+  function wmBox(id, extra = "") {
+    const a = ab(id);
+    return `<button class="wmbox ${extra}" data-ab="${id}" aria-pressed="${id === sel}"><b>${esc(a.name)}</b><span>${esc(a.narrow.slice(0, 2).join(" · "))}</span></button>`;
+  }
+  function wmHTML() {
+    return `<div class="eyebrow">${esc(D.wm.title)}</div><p class="cogintro">${esc(D.wm.intro)}</p>
+      <div class="wmgrid" role="group" aria-label="Working memory model diagram">
+        <span class="wmlab" style="grid-row:1/4">Fluid systems</span>
+        <div class="wmce">${wmBox("wm_ce", "ce")}</div>
+        <span class="wmarr a1">↓</span><span class="wmarr a2">↓</span><span class="wmarr a3">↓</span>
+        <div class="wmrow">${wmBox("wm_vss")}<span class="harr">⇄</span>${wmBox("wm_eb")}<span class="harr">⇄</span>${wmBox("wm_pl")}</div>
+        <span class="wmarr a1">⇅</span><span class="wmarr a2">⇅</span><span class="wmarr a3">⇅</span>
+        <span class="wmlab ltm">Crystallized systems</span>
+        <div class="wmrow ltm">${D.wm.ltm.map(([n, f]) => `<button class="wmbox ltm" data-open="${f}"><b>${esc(n)}</b><span>Long-term memory</span></button>`).join('<span class="harr">⇄</span>')}</div>
+      </div>
+      <p class="cognote">Arrows follow Baddeley (2000, 2012): the executive controls the three stores; each store exchanges information with long-term knowledge. Select a long-term memory box to open it.</p>`;
+  }
+
+  /* ---------- detail ---------- */
+  function stepsHTML(a, interactive) {
+    return `<ol class="psteps">${a.steps.map(([t, d, rs, es], i) => `<li data-si="${i}" class="${W.i === i && sel === a.id ? "on" : ""}">
+      <span class="pn">${i + 1}</span><div class="pb"><b>${esc(t)}</b><p>${esc(d)}</p>
+      <div class="chiprow">${rs.map((r) => chipHTML(r)).join("")}${es.map((x) => chipHTML(x)).join("")}</div>
+      ${interactive ? `<div class="pbtns2"><button class="minibtn" data-sread="${i}">${ICON.voice}Read</button><button class="minibtn" data-sfrom="${i}">${ICON.play}Walk & narrate from here</button></div>` : ""}</div></li>`).join("")}</ol>`;
+  }
+  function stackHTML(a) {
+    const rows = [
+      ["Ability", [chipHTML(a.id, "current")]],
+      ["Processes", a.steps.map(([t], i) => `<span class="tag ptag">${i + 1}. ${esc(t)}</span>`)],
+      ["Functions", a.fns.map((x) => chipHTML(x))],
+      ["Brain regions", a.regions.map((x) => chipHTML(x))],
+      ["Cells", a.stack.cells.map((x) => chipHTML(x))],
+      ["Signals", a.stack.signals.map((x) => chipHTML(x))],
+      ["Pathways", a.stack.pathways.map((x) => chipHTML(x))],
+      ["Proteins", a.stack.proteins.map((x) => chipHTML(x))],
+      ["Genes", a.stack.genes.map((x) => chipHTML(x))]
+    ];
+    return `<div class="stack">${rows.map(([n, items]) => `<div class="srow2"><span class="sl">${n}</span><div class="chiprow">${items.length ? items.join("") : '<span class="muted">None in the atlas yet</span>'}</div></div>`).join("")}</div>`;
+  }
+  function detailHTML(a) {
+    const eyebrow = a.model === "chc" ? `CHC · stratum II · ${esc(GROUP[a.group])}` : "Working memory model · component";
+    return `<div class="eyebrow">${eyebrow}</div>
+      <h2 class="abh"><span class="abcode g-${a.group}">${esc(a.code)}</span>${esc(a.name)}</h2>
+      <p class="abdef">${esc(a.def)}</p>
+      <div class="kv"><span>${a.model === "chc" ? "Narrow abilities (stratum I)" : "Parts and functions"}</span><div class="chiprow">${a.narrow.map((n) => `<span class="tag">${esc(n)}</span>`).join("")}</div></div>
+      <div class="kv"><span>Measured by</span><p>${esc(a.tests.join(" · "))}</p></div>
+      <div class="actions">
+        <button class="btn primary" data-cact="walk">${ICON.play}Walk through the process</button>
+        <button class="btn" data-cact="trace">${ICON.brain}Trace in 3D brain</button>
+        <button class="btn" data-cact="read">${ICON.voice}Read aloud</button>
+        <button class="btn" data-cact="map">${ICON.map}Show on map</button>
+      </div>
+      <div class="walkbar glass" id="walkbar" hidden>
+        <button class="minibtn" data-cact="prev" aria-label="Previous step">${ICON.prev}</button>
+        <button class="minibtn" data-cact="pp" id="wPP" aria-label="Pause">${ICON.pause}</button>
+        <button class="minibtn" data-cact="next" aria-label="Next step">${ICON.next}</button>
+        <span class="wpos mono" id="wPos"></span>
+        <label class="narrsel" id="wNarrL">${ICON.voice}<span>Narrate</span><select id="wNarr" aria-label="When narration starts"></select></label>
+        <button class="minibtn" data-cact="stop" aria-label="Stop walkthrough">${ICON.close}</button>
+      </div>
+      <h3 class="ch3">How it works <span class="muted">— processes in order</span></h3>
+      ${stepsHTML(a, true)}
+      <h3 class="ch3">From ability to molecule</h3>
+      ${stackHTML(a)}
+      <h3 class="ch3">Evidence</h3><p class="abp">${esc(a.evidence)}</p>
+      <div class="caution"><b>About the genes</b> ${esc(D.geneNote)}${a.extraNote ? " " + esc(a.extraNote) : ""}</div>
+      ${a.related.length ? `<h3 class="ch3">Related</h3><div class="chiprow">${a.related.map((r) => `<button class="chip" data-type="ability" data-ab="${r}">${esc(ab(r).code)} · ${esc(ab(r).name)}</button>`).join("")}</div>` : ""}`;
+  }
+  function gHTML() {
+    const chc = D.abilities.filter((a) => a.model === "chc");
+    return `<div class="eyebrow">CHC · stratum III</div><h2 class="abh"><span class="abcode">g</span>General intelligence</h2>
+      <p class="abdef">${esc(D.chc.g)}</p>
+      <h3 class="ch3">Broad abilities that load most on g</h3>
+      <div class="chiprow">${["ab_gf", "ab_gwm", "ab_gc"].map((r) => `<button class="chip" data-type="ability" data-ab="${r}">${esc(ab(r).code)} · ${esc(ab(r).name)}</button>`).join("")}</div>
+      <h3 class="ch3">All broad abilities</h3>
+      <div class="chiprow">${chc.map((a) => `<button class="chip" data-type="ability" data-ab="${a.id}">${esc(a.code)}</button>`).join("")}</div>
+      <div class="caution" style="margin-top:14px"><b>About the genes</b> ${esc(D.geneNote)}</div>`;
+  }
+
+  /* ---------- walkthrough ---------- */
+  const narrW = (i) => W.narrFrom >= 0 && i >= W.narrFrom;
+  function startWalk(i) {
+    if (sel === "g") return;
+    if (W.narrFrom < 0 && Settings.narration) W.narrFrom = 0;
+    W.playing = true; stepTo(i);
+  }
+  function stepTo(i) {
+    const a = ab(sel); if (!a) return;
+    clearTimeout(W.timer);
+    if (Narrator.owner() === "cog") Narrator.stop(true);
+    if (i >= a.steps.length) { W.playing = false; W.i = a.steps.length - 1; syncWalk(); return; }
+    W.i = clamp(i, 0, a.steps.length - 1);
+    syncWalk();
+    const li = $(`#cogDetail .psteps li[data-si="${W.i}"]`); if (li) li.scrollIntoView({ block: "nearest", behavior: Settings.animations ? "smooth" : "auto" });
+    if (App.view === "brain") Brain.highlight(a.steps[W.i][2]);
+    if (W.playing) schedule();
+  }
+  function schedule() {
+    const a = ab(sel), s = a.steps[W.i];
+    clearTimeout(W.timer);
+    if (narrW(W.i)) {
+      Narrator.read(s[0] + ". " + s[1], { src: "cog", label: a.name + " · step " + (W.i + 1) + " of " + a.steps.length, rate: Settings.animSpeed,
+        onend: (ok) => { if (ok && W.playing) W.timer = setTimeout(() => stepTo(W.i + 1), 600); },
+        onpause: () => pauseWalk(true), onresume: () => resumeWalk(true) });
+    } else {
+      const ms = Math.max(4000, s[1].split(/\s+/).length * 330) / Settings.animSpeed;
+      W.timer = setTimeout(() => stepTo(W.i + 1), ms);
+    }
+  }
+  function pauseWalk(fromN) { W.playing = false; clearTimeout(W.timer); if (!fromN && Narrator.owner() === "cog") Narrator.pause(true); syncWalk(); }
+  function resumeWalk(fromN) {
+    if (W.i < 0) return startWalk(0);
+    W.playing = true; syncWalk();
+    if (fromN) return;
+    if (Narrator.owner() === "cog" && Narrator.state === "paused") Narrator.resume(true); else schedule();
+  }
+  function stopWalk() { clearTimeout(W.timer); if (Narrator.owner() === "cog") Narrator.stop(true); W.i = -1; W.playing = false; syncWalk(); }
+  function syncWalk() {
+    const bar = $("#walkbar"); if (!bar) return;
+    const a = ab(sel);
+    bar.hidden = W.i < 0 || !a;
+    $$("#cogDetail .psteps li").forEach((li) => li.classList.toggle("on", +li.dataset.si === W.i));
+    if (bar.hidden) return;
+    $("#wPP").innerHTML = W.playing ? ICON.pause : ICON.play; $("#wPP").setAttribute("aria-label", W.playing ? "Pause" : "Play");
+    $("#wPos").textContent = "Step " + (W.i + 1) + " / " + a.steps.length;
+    const s = $("#wNarr");
+    s.innerHTML = `<option value="-1">Off</option>` + a.steps.map((st, i) => `<option value="${i}">${i ? "From step " + (i + 1) : "From the start"}</option>`).join("");
+    s.value = String(W.narrFrom); $("#wNarrL").classList.toggle("on", W.narrFrom >= 0);
+    s.onchange = () => {
+      W.narrFrom = +s.value; $("#wNarrL").classList.toggle("on", W.narrFrom >= 0);
+      if (W.narrFrom < 0 && Narrator.owner() === "cog") Narrator.stop(true);
+      if (W.playing && narrW(W.i) && Narrator.owner() !== "cog") schedule();
+    };
+  }
+
+  function readAll() {
+    if (sel === "g") { Narrator.read("General intelligence. " + D.chc.g, { src: "cog-manual", label: "g · General intelligence" }); return; }
+    const a = ab(sel);
+    Narrator.read(a.name + ". " + a.def + " " + a.steps.map(([t, d], i) => "Step " + (i + 1) + ", " + t + ". " + d).join(" ") + " " + a.evidence, { src: "cog-manual", label: a.code + " · " + a.name });
+  }
+  function circuitFor(a) {
+    const seq = [], pairs = [], seen = new Set();
+    a.steps.forEach(([, , rs]) => rs.forEach((r) => { if (seq[seq.length - 1] !== r) seq.push(r); }));
+    for (let i = 1; i < seq.length; i++) { const k = seq[i - 1] + ">" + seq[i]; if (seq[i - 1] !== seq[i] && !seen.has(k)) { seen.add(k); pairs.push([seq[i - 1], seq[i], "glu"]); } }
+    return pairs;
+  }
+  function trace3D(id) {
+    const a = ab(id); if (!a) return;
+    App.go("brain"); if (a.regions.some((r) => !Brain.CORTEX.includes(r) && r !== "cerebellum" && r !== "brainstem")) Brain.setXray(true);
+    App.open(id, { stay: true, quiet: true });
+    Brain.showCircuit(circuitFor(a));
+    toast("Tracing " + a.name + " through " + a.regions.length + " structures");
+  }
+  return { build, select, render, stepsHTML, stackHTML, trace3D, get sel() { return sel; } };
+})();
+
+/* =========================================================================
    UI — router, dossier, journey, search palette, settings, toolbars, boot
    ========================================================================= */
 const App = {
@@ -3365,12 +4488,13 @@ const App = {
   home(e) {
     if (!e) return null;
     if (e.type === "region") return "brain";
+    if (e.type === "ability") return "cog";
     if (["gene", "organelle", "chromosome"].includes(e.type)) return "cell";
     if (e.type === "concept") return e.stage === "sim" ? null : "cell";
     return null;
   },
   go(view) {
-    if (!["brain", "cell", "sim", "map", "study"].includes(view)) view = "brain";
+    if (!["brain", "cell", "sim", "cog", "map", "study"].includes(view)) view = "brain";
     if (this.view === "brain" && view !== "brain" && Mech.open_) Mech.close();
     this.view = State.view = view; saveState();
     $$("#rail [data-view]").forEach((b) => b.setAttribute("aria-current", b.dataset.view === view ? "page" : "false"));
@@ -3380,11 +4504,13 @@ const App = {
     $("#viewSim").hidden = view !== "sim";
     $("#viewMap").hidden = view !== "map";
     $("#viewStudy").hidden = view !== "study";
+    $("#viewCog").hidden = view !== "cog";
     if (GFX.renderer) GFX.activate(this.is3D(view) ? view : null);
     if (view === "map") { MapView.show(); if (this.current) MapView.setFocus(this.current); }
     if (view === "study") Study.renderPath();
     if (view === "cell") { Cell.renderLadder(); $("#seqStrip").hidden = Cell.stage !== "helix"; }
     if (view === "sim") Sim.render();
+    if (view === "cog") Cog.render();
     try { history.replaceState(null, "", "#" + view); } catch (e) {}
     Bus.emit("view", view);
   },
@@ -3394,10 +4520,11 @@ const App = {
     this.current = State.entity = id;
     if (!opts.nojourney) { State.journey = State.journey.filter((x) => x !== id); State.journey.push(id); if (State.journey.length > 14) State.journey.shift(); }
     renderJourney();
-    Dossier.render(e);
     const home = this.home(e);
-    const transport = home && !opts.stay && (opts.from === "search" || opts.from === "study" || this.is3D(this.view));
+    const transport = home && !opts.stay && (opts.from === "search" || opts.from === "study" || this.is3D(this.view) || (home === "cog" && this.view === "cog"));
     if (transport && home !== this.view) this.go(home);
+    if (e.type === "ability" && this.view === "cog") { Dossier.hide(); Cog.select(id); }
+    else Dossier.render(e);
     const v = this.view;
     if (v === "brain") {
       if (e.type === "region") Brain.select(id, { fly: opts.fly !== false });
@@ -3413,7 +4540,7 @@ const App = {
     Object.entries(State.drillDone).forEach(([r, dd]) => { const d = KG.get(r).drill; if (d) Object.entries(d).forEach(([k, v]) => { if (v === id) dd[k] = true; }); });
     saveState();
     Bus.emit("open", id);
-    if (Settings.narration && !opts.quiet) Voice.speak(e.name + ". " + (e.short || "") + " " + (e.type === "region" ? e.does : ""));
+    if (Settings.narrateStart === "auto" && !opts.quiet && !(e.type === "ability" && this.view === "cog")) Dossier.readAll();
   },
   close() {
     Dossier.hide(); this.current = null; State.entity = null; saveState();
@@ -3436,6 +4563,8 @@ const Dossier = (function () {
     el = h("aside", { id: "dossier", class: "glass", hidden: true, "aria-label": "Details" });
     $("#app").append(el);
     el.addEventListener("click", (ev) => {
+      const rd = ev.target.closest("[data-read]");
+      if (rd) { readSection(rd.dataset.read); return; }
       const s = ev.target.closest(".sec > button");
       if (s) { const sec = s.parentElement, k = sec.dataset.k; sec.classList.toggle("open"); if (sec.classList.contains("open")) { App.openSecs.add(k); Bus.emit("expand", k); } else App.openSecs.delete(k); }
     });
@@ -3466,14 +4595,20 @@ const Dossier = (function () {
       if (e.id === "k_dna" || e.id === "k_gene") b("See the double helix", () => { App.go("cell"); Cell.setStage("helix"); }, false, "dna");
       if (e.id === "o_ribo" || e.id === "k_gene") b("Simulate DNA → protein", () => { App.go("sim"); Sim.load(); }, false, "play");
     }
+    if (e.type === "ability") {
+      b("Open in Abilities explorer", () => { App.go("cog"); Cog.select(e.id); Dossier.hide(); }, true, "cog");
+      if (App.view !== "brain") b("Trace in 3D brain", () => Cog.trace3D(e.id), false, "brain");
+    }
     if (e.type === "concept" && e.stage === "sim") b("Run the DNA → protein simulation", () => { App.go("sim"); Sim.load(); }, true, "play");
     if (KG.tierOf(e.id) >= 0 && App.view !== "map") b("Show on map", () => { App.go("map"); MapView.setFocus(e.id); }, false, "map");
+    if (Narrator.ok) b("Read aloud", () => readAll(), false, "voice");
     if (e.type === "region" && e.drill) b("Study this", () => { Study.region = e.id; App.go("study"); Study.renderPath(); }, false, "study");
     return A;
   }
   function sec(k, title, html) {
     const open = App.openSecs.has(k) ? " open" : "";
-    return `<div class="sec${open}" data-k="${k}"><button aria-expanded="${!!open}">${title}</button><div class="sbody">${html}</div></div>`;
+    const rb = Narrator.ok && k !== "rel" && k !== "genes" ? `<button class="minibtn readsec" data-read="${k}" title="Read this section aloud">${ICON.voice}Read</button>` : "";
+    return `<div class="sec${open}" data-k="${k}"><button aria-expanded="${!!open}">${title}</button><div class="sbody">${rb}${html}</div></div>`;
   }
   function chainHTML(e) {
     const c = KG.chain(e.id, 3); if (!c) return "";
@@ -3514,11 +4649,17 @@ const Dossier = (function () {
         <div class="chiprow" style="margin-top:6px">${chipHTML("chr" + e.chr)}<span style="color:var(--faint)">→</span>${chipHTML(e.id, "current")}<span style="color:var(--faint)">→</span>${chipHTML(e.links[0][1])}</div>
         <a class="btn" style="text-decoration:none;margin-top:4px" href="https://www.ncbi.nlm.nih.gov/gene/?term=${encodeURIComponent(e.name)}%5Bsym%5D+AND+human%5Borgn%5D" target="_blank" rel="noopener">${ICON.ext} NCBI Gene record</a></div>`;
     }
-    body += chainHTML(e);
+    if (e.type === "ability") {
+      const a = e.cog;
+      body += `<div class="kv" style="margin-top:12px"><span>${a.model === "chc" ? "Narrow abilities" : "Parts"}</span><div class="chiprow">${a.narrow.map((n) => `<span class="tag">${esc(n)}</span>`).join("")}</div></div>`;
+      body += sec("steps", "How does it work?", Cog.stepsHTML(a, false));
+      body += sec("stack", "From ability to molecule", Cog.stackHTML(a));
+      body += sec("evidence", "Evidence", `<p>${esc(a.evidence)}</p><p class="muted" style="font-size:12.5px">${esc(window.ATLAS.cognition.geneNote)}</p>`);
+    } else body += chainHTML(e);
     if (e.type === "region") body += drillHTML(e);
     const lv = (min) => levelAt(min);
     SECS.forEach(([k, title, min]) => {
-      if (!lv(min)) return;
+      if (!lv(min) || e.type === "ability") return;
       if (k === "rel") { if (e.type !== "region") body += sec(k, title, relHTML(e)); return; }
       if (k === "genes") { if (e.type === "region") body += sec(k, title, genesHTML(e)); return; }
       if (k === "connects" && e.type === "region") { body += sec(k, title, `<p>${rich(e.connects)}</p><div class="chiprow">${KG.neighbors(e.id).filter((n) => n.rel === "projects").map((n) => chipHTML(n.id)).join("")}</div>`); return; }
@@ -3535,7 +4676,18 @@ const Dossier = (function () {
     el.querySelector(".dbody").scrollTop = 0;
   }
   function hide() { el.hidden = true; el.classList.remove("minimized"); Panels.refresh(); }
-  return { build, render, hide };
+  const secText = (sec) => { const b = sec.querySelector(".sbody").cloneNode(true); b.querySelectorAll(".readsec").forEach((x) => x.remove()); return b.textContent.replace(/\s+/g, " ").trim(); };
+  function readSection(k) {
+    const e = KG.get(App.current), sec = el.querySelector(`.sec[data-k="${k}"]`); if (!e || !sec) return;
+    Narrator.read(secText(sec), { src: "dossier", label: e.name + " · " + sec.querySelector(":scope > button").textContent });
+  }
+  function readAll() {
+    const e = KG.get(App.current); if (!e) return;
+    const parts = [e.name + ". " + (e.short || "")];
+    $$(".sec.open", el).forEach((sec) => { if (sec.dataset.k !== "rel" && sec.dataset.k !== "genes") parts.push(sec.querySelector(":scope > button").textContent + ". " + secText(sec)); });
+    Narrator.read(parts.join(" "), { src: "dossier", label: e.name + (parts.length > 1 ? " · open sections" : "") });
+  }
+  return { build, render, hide, readAll };
 })();
 
 /* ---------------- MINIMIZABLE PANELS ----------------
@@ -3638,18 +4790,20 @@ function buildSettings() {
         ${row("Animations", chk("animations"))}
         ${row("Animation speed", sel("animSpeed", [[0.5, "0.5×"], [0.75, "0.75×"], [1, "1×"], [1.25, "1.25×"], [1.5, "1.5×"], [2, "2×"]]))}</fieldset>
       <fieldset><legend>Sound</legend>
-        ${row("Narration" + (Voice.ok ? "" : " (not supported here)"), chk("narration"))}
+        ${Voice.ok ? "" : '<p style="font-size:12px;color:var(--bad);margin:0 0 6px">Narration isn\'t supported in this browser.</p>'}
+        ${row("Start narration", sel("narrateStart", [["manual", "When I press Read"], ["auto", "As soon as an explanation opens"]]))}
+        ${row("Narrate animations from the first step", chk("narration"))}
         ${row("Voice rate", rng("voiceRate", 0.7, 1.6, 0.05))}
         ${row("Background sound", chk("ambient"))}
         ${row("Volume", rng("volume", 0, 1, 0.05))}
-        <p style="font-size:12px;color:var(--muted);margin:6px 0 0">Everything narrated is also shown as text, so sound is never required.</p></fieldset>
+        <p style="font-size:12px;color:var(--muted);margin:6px 0 0">Press <kbd>P</kbd> to pause or resume the narrator and <kbd>Esc</kbd> to stop it. In animations, the Narrate menu lets you choose the step where narration begins. Everything narrated is also shown as text, so sound is never required.</p></fieldset>
       <fieldset><legend>Camera</legend>
         ${row("Camera sensitivity", rng("camSens", 0.3, 2.5, 0.1))}
         ${row("Auto-rotate when idle", chk("autorotate"))}</fieldset>
       <fieldset><legend>Progress</legend><button class="btn" id="sReset">Clear study progress and score</button></fieldset>`;
     $("#sClose").onclick = () => (el.hidden = true);
     $$("[data-p]", el).forEach((b) => (b.onclick = () => { setSetting("preset", b.dataset.p); render(); }));
-    ["bg", "density", "regionColors", "labels", "detail", "animSpeed"].forEach((k) => ($("#s_" + k).onchange = (e) => setSetting(k, k === "animSpeed" ? +e.target.value : e.target.value)));
+    ["bg", "density", "regionColors", "labels", "detail", "animSpeed", "narrateStart"].forEach((k) => ($("#s_" + k).onchange = (e) => setSetting(k, k === "animSpeed" ? +e.target.value : e.target.value)));
     ["highlight", "voiceRate", "volume", "camSens"].forEach((k) => ($("#s_" + k).oninput = (e) => setSetting(k, +e.target.value)));
     ["effects", "animations", "narration", "ambient", "autorotate"].forEach((k) => ($("#s_" + k).onchange = (e) => setSetting(k, e.target.checked)));
     $("#sReset").onclick = () => { State.journey = []; State.study = {}; State.quiz = { right: 0, total: 0 }; State.drillDone = {}; saveState(); renderJourney(); Study.renderPath(); toast("Progress cleared"); };
@@ -3700,11 +4854,23 @@ function buildCellSide() {
   $("#app").append(h("div", { id: "seqStrip", class: "glass", hidden: true }));
 }
 
+/* ---------------- NARRATOR BAR ---------------- */
+function buildNarrator() {
+  const n = $("#narrator");
+  n.innerHTML = `<span class="nr-ic">${ICON.voice}</span><span class="nr-label"></span><span class="nr-pos mono"></span>
+    <button class="nr-b" data-nr="prev" aria-label="Previous sentence" title="Previous sentence">${ICON.prev}</button>
+    <button class="nr-b nr-pp" data-nr="pp" aria-label="Pause narration (P)"></button>
+    <button class="nr-b" data-nr="next" aria-label="Next sentence" title="Next sentence">${ICON.next}</button>
+    <button class="nr-b" data-nr="stop" aria-label="Stop narration (Esc)" title="Stop narration (Esc)">${ICON.stop}</button>`;
+  n.addEventListener("click", (e) => { const b = e.target.closest("[data-nr]"); if (!b) return; const a = b.dataset.nr; if (a === "pp") Narrator.toggle(); if (a === "prev") Narrator.skip(-1); if (a === "next") Narrator.skip(1); if (a === "stop") Narrator.stop(); });
+  Narrator.render();
+}
+
 /* ---------------- BOOT ---------------- */
 function boot() {
   applySettings();
   const rail = $("#rail");
-  [["brain", "Brain", "brain"], ["cell", "Genome", "cell"], ["sim", "Molecular", "dna"], ["map", "Map", "map"], ["study", "Study", "study"]].forEach(([v, l, i]) => {
+  [["brain", "Brain", "brain"], ["cell", "Genome", "cell"], ["sim", "Molecular", "dna"], ["cog", "Abilities", "cog"], ["map", "Map", "map"], ["study", "Study", "study"]].forEach(([v, l, i]) => {
     const b = h("button", { "data-view": v, "aria-label": l, html: ICON[i] + `<span>${l}</span>` }); b.onclick = () => App.go(v); rail.append(b);
   });
   rail.append(h("hr"));
@@ -3716,13 +4882,16 @@ function boot() {
   buildBrainTools(); buildCellSide();
   Dossier.build(); Palette.build(); Mech.build();
   const S = buildSettings(); st.onclick = () => S.toggle();
-  Sim.build(); MapView.build(); Study.build();
+  Sim.build(); MapView.build(); Study.build(); Cog.build();
+  buildNarrator();
   Panels.init();
 
   // any element with data-open navigates to that entity
   document.addEventListener("click", (e) => { const t = e.target.closest("[data-open]"); if (t) { e.preventDefault(); App.open(t.dataset.open); } });
   document.addEventListener("keydown", (e) => {
     const typing = /INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName);
+    if (!typing && !e.metaKey && !e.ctrlKey && e.key.toLowerCase() === "p" && Narrator.state !== "idle") { e.preventDefault(); Narrator.toggle(); return; }
+    if (e.key === "Escape" && Narrator.state !== "idle" && !Palette.isOpen) { Narrator.stop(); return; }
     if ((e.key === "/" && !typing) || ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k")) { e.preventDefault(); Palette.open(); }
     else if (e.key === "Escape") {
       if (Palette.isOpen) Palette.close();
@@ -3736,7 +4905,7 @@ function boot() {
   setTimeout(() => {
     if (ok) { Brain.init(); Cell.init(); }
     const hv = (location.hash || "").slice(1);
-    App.go(["brain", "cell", "sim", "map", "study"].includes(hv) ? hv : State.view || "brain");
+    App.go(["brain", "cell", "sim", "cog", "map", "study"].includes(hv) ? hv : State.view || "brain");
     if (State.entity && KG.get(State.entity)) App.open(State.entity, { nojourney: true, stay: true, fly: false, quiet: true });
     $("#loading").classList.add("done");
     if (Settings.ambient) document.addEventListener("pointerdown", () => Ambient.set(true), { once: true });
